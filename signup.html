@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a Learnora account and start a personalized learning journey.">
+    <title>Create Account | Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-shell auth-shell--signup">
+        <section class="auth-showcase" aria-label="Why join Learnora">
+            <a class="auth-brand" href="index.html" aria-label="Learnora home"><img src="images/logo.png"
+                    alt="Learnora"></a>
+            <div class="auth-orb auth-orb--one" aria-hidden="true"></div>
+            <div class="auth-orb auth-orb--two" aria-hidden="true"></div>
+
+            <div class="showcase-content">
+                <span class="showcase-kicker"><i class="fa-solid fa-wand-magic-sparkles"></i> Your potential,
+                    personalized</span>
+                <h1>A smarter path to<br><em>every learning goal.</em></h1>
+                <p>Connect with trusted tutors and turn ambitious goals into clear, measurable progress.</p>
+
+                <div class="journey-map" aria-hidden="true">
+                    <div class="signup-journey-line"></div>
+                    <div class="signup-journey-step is-done"><span><i class="fa-solid fa-check"></i></span>
+                        <p><strong>Tell us your goal</strong><small>A learning plan shaped around you</small></p>
+                    </div>
+                    <div class="signup-journey-step is-active"><span><i class="fa-solid fa-user-check"></i></span>
+                        <p><strong>Meet your ideal tutor</strong><small>Verified expertise, the right fit</small></p>
+                    </div>
+                    <div class="signup-journey-step"><span><i class="fa-solid fa-arrow-trend-up"></i></span>
+                        <p><strong>Watch progress grow</strong><small>Insights that keep you moving</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-proof showcase-proof--quote">
+                <i class="fa-solid fa-quote-left"></i>
+                <p><strong>“Learnora made finding the right tutor effortless.”</strong><span>— Aanya's parent</span></p>
+            </div>
+        </section>
+
+        <section class="auth-form-side">
+            <a class="auth-brand auth-brand--mobile" href="index.html" aria-label="Learnora home"><img
+                    src="images/logo.png" alt="Learnora"></a>
+
+            <div class="auth-card auth-card--signup">
+                <div class="auth-heading">
+                    <span class="signup-eyebrow"><span></span> Join Learnora</span>
+                    <h2>Create Your Account</h2>
+                    <p>A few details and your learning space is ready.</p>
+                </div>
+
+                <form class="auth-form" action="#" method="post">
+                    <fieldset class="role-picker">
+                        <legend>I’m joining as a</legend>
+                        <div class="role-grid">
+                            <label><input type="radio" name="role" value="parent" checked><span><i
+                                        class="fa-solid fa-people-roof"></i><b>Parent</b></span></label>
+                            <label><input type="radio" name="role" value="student"><span><i
+                                        class="fa-solid fa-book-open-reader"></i><b>Student</b></span></label>
+                            <label><input type="radio" name="role" value="tutor"><span><i
+                                        class="fa-solid fa-chalkboard-user"></i><b>Tutor</b></span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field-grid">
+                        <div class="auth-field">
+                            <label for="full-name">Full Name</label>
+                            <div class="input-wrap"><i class="fa-regular fa-user"></i><input id="full-name" name="name"
+                                    type="text" autocomplete="name" placeholder="Your full name" required></div>
+                        </div>
+                        <div class="auth-field">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrap"><i class="fa-solid fa-phone"></i><input id="phone" name="phone"
+                                    type="tel" autocomplete="tel" placeholder="+91 98765 43210" required></div>
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="signup-email">Email Address</label>
+                        <div class="input-wrap"><i class="fa-regular fa-envelope"></i><input id="signup-email"
+                                name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="field-grid">
+                        <div class="auth-field">
+                            <label for="signup-password">Password</label>
+                            <div class="input-wrap"><i class="fa-solid fa-lock"></i><input id="signup-password"
+                                    name="password" type="password" autocomplete="new-password"
+                                    placeholder="Create password" minlength="8" required><button class="password-toggle"
+                                    type="button" aria-label="Show password" aria-controls="signup-password"><i
+                                        class="fa-regular fa-eye"></i></button></div>
+                        </div>
+                        <div class="auth-field">
+                            <label for="confirm-password">Confirm Password</label>
+                            <div class="input-wrap"><i class="fa-solid fa-lock"></i><input id="confirm-password"
+                                    name="confirm-password" type="password" autocomplete="new-password"
+                                    placeholder="Repeat password" minlength="8" required><button class="password-toggle"
+                                    type="button" aria-label="Show password" aria-controls="confirm-password"><i
+                                        class="fa-regular fa-eye"></i></button></div>
+                        </div>
+                    </div>
+
+                    <label class="auth-check terms-check" for="terms">
+                        <input id="terms" name="terms" type="checkbox" required>
+                        <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                        <span>I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy
+                                Policy</a>.</span>
+                    </label>
+
+                    <button class="auth-primary" type="submit">Create Account <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </form>
+
+                <div class="auth-divider"><span>or continue with</span></div>
+                <div class="social-login-grid" aria-label="Social sign up options">
+                    <button class="auth-social auth-social--google" type="button" aria-label="Continue with Google">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i><span>Google</span>
+                    </button>
+                    <button class="auth-social auth-social--facebook" type="button" aria-label="Continue with Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+                    </button>
+                    <button class="auth-social auth-social--apple" type="button" aria-label="Continue with Apple">
+                        <i class="fa-brands fa-apple" aria-hidden="true"></i><span>Apple</span>
+                    </button>
+                </div>
+                <p class="auth-switch">Already have an account? <a href="login.html">Sign In <i
+                            class="fa-solid fa-arrow-right-to-bracket"></i></a></p>
+            </div>
+
+            <div class="auth-trust" aria-label="Learnora benefits">
+                <span><i class="fa-solid fa-circle-check"></i> Verified Tutors</span>
+                <span><i class="fa-solid fa-chart-line"></i> Progress Tracking</span>
+                <span><i class="fa-solid fa-wand-magic-sparkles"></i> Personalized Learning</span>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

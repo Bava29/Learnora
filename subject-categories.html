@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid nav-container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Learnora Logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Tutors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="find-tutors.html">Find Tutors</a></li>
+                                <li><a class="dropdown-item" href="subject-categories.html">Subject Categories</a></li>
+                                <li><a class="dropdown-item" href="top-rated-tutors.html">Top Rated Tutors</a></li>
+                                <li><a class="dropdown-item" href="become-a-tutor.html">Become a Tutor</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Right Side -->
+                    <div class="nav-actions">
+
+                        <button class="icon-btn" id="rtlToggle">
+                            <i class="fa-solid fa-right-left"></i>
+                        </button>
+
+                        <button class="icon-btn" id="themeToggle">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+
+                        <a href="login.html" class="secondary-btn">
+                            Login
+                        </a>
+
+                        <a href="dashboard.html" class="primary-btn">
+                            Dashboard
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Subjects Hero Start -->
+    <section class="subjects-hero">
+
+        <div class="container">
+
+            <div class="subjects-hero-content text-center">
+
+                <span class="subjects-hero-badge">
+                    Explore Subjects
+                </span>
+
+                <h1>
+                    Discover Subjects That Match Your Learning Goals
+                </h1>
+
+                <p>
+                    Browse a wide range of academic and skill-based subjects,
+                    connect with expert tutors, and build a personalized learning
+                    journey designed for success.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Subjects Hero End -->
+
+    <!-- Subject Categories Start -->
+    <section class="subject-categories-showcase">
+
+        <div class="container">
+
+            <div class="subject-categories-header text-center">
+
+                <span class="section-subtitle">
+                    Subject Categories
+                </span>
+
+                <h2 class="section-title">
+                    Explore Popular Learning Paths
+                </h2>
+
+                <p class="section-description">
+                    Find the right tutor faster with detailed subject cards that highlight popular topics,
+                    tutor availability, and the learning areas students ask for most.
+                </p>
+
+            </div>
+
+            <div class="subject-list">
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>Mathematics</h3>
+                            <span>120 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>Algebra</span>
+                            <span>Geometry</span>
+                            <span>Calculus</span>
+                            <span>Statistics</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>Science</h3>
+                            <span>95 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>Physics</span>
+                            <span>Chemistry</span>
+                            <span>Biology</span>
+                            <span>Environmental Science</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>English</h3>
+                            <span>88 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>Grammar</span>
+                            <span>Literature</span>
+                            <span>Writing</span>
+                            <span>Spoken English</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>Computer Science</h3>
+                            <span>76 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>Programming</span>
+                            <span>Web Development</span>
+                            <span>Python</span>
+                            <span>Data Structures</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>Languages</h3>
+                            <span>64 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>French</span>
+                            <span>Spanish</span>
+                            <span>Hindi</span>
+                            <span>Communication Skills</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="subject-horizontal-card">
+
+                    <div class="subject-card-media">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <div class="subject-card-main">
+
+                        <div class="subject-card-heading">
+                            <h3>Social Studies</h3>
+                            <span>58 Tutors Available</span>
+                        </div>
+
+                        <div class="subject-topic-list">
+                            <span>History</span>
+                            <span>Geography</span>
+                            <span>Civics</span>
+                            <span>Economics</span>
+                        </div>
+
+                    </div>
+
+                    <div class="subject-card-action">
+                        <a href="find-tutors.html" class="subject-view-btn">
+                            View Tutors
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Subject Categories End -->
+
+
+
+    <!-- Learning Levels Start -->
+    <section class="learning-levels-section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Learning Levels
+                </span>
+
+                <h2 class="section-title">
+                    Support For Every Stage Of Learning
+                </h2>
+
+                <p class="section-description">
+                    Explore tutoring programs designed for students at
+                    different academic levels and learning goals.
+                </p>
+
+            </div>
+
+            <div class="levels-timeline">
+
+                <div class="level-item">
+
+                    <div class="level-number">
+                        01
+                    </div>
+
+                    <div class="level-content">
+
+                        <h4>Primary School</h4>
+
+                        <p>
+                            Build strong foundations in reading,
+                            writing, mathematics, and critical thinking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="level-item">
+
+                    <div class="level-number">
+                        02
+                    </div>
+
+                    <div class="level-content">
+
+                        <h4>Middle School</h4>
+
+                        <p>
+                            Strengthen subject knowledge and develop
+                            confidence through structured learning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="level-item">
+
+                    <div class="level-number">
+                        03
+                    </div>
+
+                    <div class="level-content">
+
+                        <h4>High School</h4>
+
+                        <p>
+                            Prepare for exams, improve academic
+                            performance, and achieve educational goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="level-item">
+
+                    <div class="level-number">
+                        04
+                    </div>
+
+                    <div class="level-content">
+
+                        <h4>College & University</h4>
+
+                        <p>
+                            Gain deeper subject expertise with guidance
+                            from experienced academic tutors.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="level-item">
+
+                    <div class="level-number">
+                        05
+                    </div>
+
+                    <div class="level-content">
+
+                        <h4>Competitive Exams</h4>
+
+                        <p>
+                            Receive focused preparation for entrance,
+                            scholarship, and certification exams.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Learning Levels End -->
+
+    <!-- Featured Subject Tutors Start -->
+    <section class="featured-subject-tutors">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Expert Tutors
+                </span>
+
+                <h2 class="section-title">
+                    Learn From Top-Rated Educators
+                </h2>
+
+                <p class="section-description">
+                    Meet experienced tutors specializing in different
+                    subjects and learning levels.
+                </p>
+
+            </div>
+
+            <div class="featured-tutor-wrapper">
+
+                <!-- Tutor -->
+
+                <div class="featured-tutor-card">
+
+                    <div class="subject-tutor-image">
+                        <img src="images/tutor-1.jpg" alt="">
+                    </div>
+
+                    <div class="tutor-info">
+
+                        <span class="subject-tag">
+                            Mathematics
+                        </span>
+
+                        <h4>Sarah Johnson</h4>
+
+                        <div class="tutor-meta">
+
+                            <span>
+                                <i class="fa-solid fa-briefcase"></i>
+                                8 Years Experience
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.9 Rating
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Expert mathematics tutor helping students
+                            master algebra, geometry, and calculus.
+                        </p>
+
+                        <a href="#" class="primary-btn">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Tutor -->
+
+                <div class="featured-tutor-card">
+
+                    <div class="subject-tutor-image">
+                        <img src="images/tutor-2.jpg" alt="">
+                    </div>
+
+                    <div class="tutor-info">
+
+                        <span class="subject-tag">
+                            Science
+                        </span>
+
+                        <h4>David Miller</h4>
+
+                        <div class="tutor-meta">
+
+                            <span>
+                                <i class="fa-solid fa-briefcase"></i>
+                                6 Years Experience
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.8 Rating
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Passionate science educator specializing in
+                            physics, chemistry, and biology.
+                        </p>
+
+                        <a href="#" class="primary-btn">
+                            View Profile
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Featured Subject Tutors End -->
+
+    <!-- Subject Guidance Start -->
+    <section class="subject-guidance-section">
+
+        <div class="container">
+
+            <div class="guidance-wrapper">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7">
+
+                        <div class="guidance-content">
+
+                            <span class="guidance-badge">
+                                Personalized Guidance
+                            </span>
+
+                            <h2>
+                                Not Sure Which Subject Is Right For You?
+                            </h2>
+
+                            <p>
+                                Our academic advisors can help you identify
+                                the best subjects, learning paths, and tutors
+                                based on your goals, strengths, and interests.
+                            </p>
+
+                            <ul class="guidance-list">
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Personalized subject recommendations
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Expert tutor matching assistance
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Academic and career guidance
+                                </li>
+
+                            </ul>
+
+                            <a href="contact.html" class="primary-btn">
+                                Talk To An Advisor
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <div class="guidance-image">
+
+                            <img src="images/subject-guidance.png" alt="Subject Guidance">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Subject Guidance End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- About -->
+                <div class="col-lg-4">
+
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Learnora Logo">
+                    </div>
+
+                    <p class="footer-description">
+                        Learnora connects parents and students with trusted tutors,
+                        making personalized learning simple, flexible, and effective.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+
+                        <li><a href="#">About Us</a></li>
+
+                        <li><a href="#">Tutors</a></li>
+
+                        <li><a href="#">Pricing</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h4>Support</h4>
+
+                    <ul>
+
+                        <li><a href="#">Help Center</a></li>
+
+                        <li><a href="#">FAQs</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                        <li><a href="#">Support Team</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3">
+
+                    <h4>Contact Info</h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chennai, Tamil Nadu, India
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            hello@learnora.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Learnora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll To Top Button -->
+
+    <button id="scrollTopBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

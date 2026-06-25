@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to Learnora to manage tutors, sessions, and learning progress.">
+    <title>Sign In | Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="auth-page">
+    <main class="auth-shell auth-shell--login">
+        <section class="auth-showcase" aria-label="About Learnora">
+            <a class="auth-brand" href="index.html" aria-label="Learnora home">
+                <img src="images/logo.png" alt="Learnora">
+            </a>
+
+            <div class="auth-orb auth-orb--one" aria-hidden="true"></div>
+            <div class="auth-orb auth-orb--two" aria-hidden="true"></div>
+
+            <div class="showcase-content">
+                <span class="showcase-kicker"><i class="fa-solid fa-sparkles"></i> Learning that fits your world</span>
+                <h1>Pick up right where<br><em>curiosity left off.</em></h1>
+                <p>Your tutors, schedules, and progress live together in one calm, connected learning space.</p>
+
+                <div class="learning-preview" aria-hidden="true">
+                    <div class="preview-topline">
+                        <span><i class="fa-solid fa-chart-simple"></i> Weekly progress</span>
+                        <strong>+18%</strong>
+                    </div>
+                    <div class="progress-track"><span></span></div>
+                    <div class="preview-bottom">
+                        <div class="avatar-stack"><span>AR</span><span>MK</span><span>+8</span></div>
+                        <p><strong>Next session</strong>Today, 4:30 PM</p>
+                        <span class="preview-play"><i class="fa-solid fa-play"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-proof">
+                <div class="proof-avatars"><span>AS</span><span>RJ</span><span>NK</span></div>
+                <p><strong>Trusted by 12,000+ learners</strong><span>Building brighter futures every day</span></p>
+            </div>
+        </section>
+
+        <section class="auth-form-side">
+            <a class="auth-brand auth-brand--mobile" href="index.html" aria-label="Learnora home">
+                <img src="images/logo.png" alt="Learnora">
+            </a>
+
+            <div class="auth-card">
+                <div class="auth-heading">
+                    <span class="login-eyebrow"><span></span> Welcome Back</span>
+                    <h2>Sign In to Your Account</h2>
+                    <p>Enter your details to continue your learning journey.</p>
+                </div>
+
+                <form class="auth-form" action="#" method="post">
+                    <div class="auth-field">
+                        <label for="login-email">Email Address</label>
+                        <div class="input-wrap">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <input id="login-email" name="email" type="email" autocomplete="email"
+                                placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="login-password">Password</label>
+                        <div class="input-wrap">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            <input id="login-password" name="password" type="password" autocomplete="current-password"
+                                placeholder="Enter your password" required>
+                            <button class="password-toggle" type="button" aria-label="Show password"
+                                aria-controls="login-password">
+                                <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="auth-options-row">
+                        <label class="auth-check" for="remember">
+                            <input id="remember" name="remember" type="checkbox">
+                            <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+                            <span>Remember Me</span>
+                        </label>
+                        <a class="forgot-link" href="#">Forgot Password?</a>
+                    </div>
+
+                    <button class="auth-primary" type="submit">Sign In <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+
+                <div class="auth-divider"><span>or continue with</span></div>
+
+                <div class="social-login-grid" aria-label="Social sign in options">
+                    <button class="auth-social auth-social--google" type="button" aria-label="Continue with Google">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i><span>Google</span>
+                    </button>
+                    <button class="auth-social auth-social--facebook" type="button" aria-label="Continue with Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span>
+                    </button>
+                    <button class="auth-social auth-social--apple" type="button" aria-label="Continue with Apple">
+                        <i class="fa-brands fa-apple" aria-hidden="true"></i><span>Apple</span>
+                    </button>
+                </div>
+
+                <p class="auth-switch">New to Learnora? <a href="signup.html">Create Account <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            </div>
+
+            <div class="auth-trust" aria-label="Why trust Learnora">
+                <span><i class="fa-solid fa-shield-halved"></i> Secure Login</span>
+                <span><i class="fa-solid fa-circle-check"></i> Verified Tutors</span>
+                <span><i class="fa-solid fa-graduation-cap"></i> Safe Learning</span>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

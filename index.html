@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid nav-container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Learnora Logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Tutors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="find-tutors.html">Find Tutors</a></li>
+                                <li><a class="dropdown-item" href="subject-categories.html">Subject Categories</a></li>
+                                <li><a class="dropdown-item" href="top-rated-tutors.html">Top Rated Tutors</a></li>
+                                <li><a class="dropdown-item" href="become-a-tutor.html">Become a Tutor</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Right Side -->
+                    <div class="nav-actions">
+
+                        <button class="icon-btn" id="rtlToggle">
+                            <i class="fa-solid fa-right-left"></i>
+                        </button>
+
+                        <button class="icon-btn" id="themeToggle">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+
+                        <a href="login.html" class="secondary-btn">
+                            Login
+                        </a>
+
+                        <a href="dashboard.html" class="primary-btn">
+                            Dashboard
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators hero-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row align-items-center hero-slide">
+                            <div class="col-lg-6">
+                                <span class="hero-badge">Verified Home Tutors</span>
+                                <h1>Learn better with the right tutor by your side.</h1>
+                                <p>
+                                    Find trusted tutors for school subjects, competitive exams, and skill-based learning
+                                    with flexible home and online class options.
+                                </p>
+
+                                <div class="hero-actions">
+                                    <a href="find-tutors.html" class="primary-btn">Find Tutors</a>
+                                    <a href="subject-categories.html" class="secondary-btn">View Subjects</a>
+                                </div>
+
+                                <div class="hero-mini-stats">
+                                    <div>
+                                        <strong>4.9</strong>
+                                        <span>Parent Rating</span>
+                                    </div>
+                                    <div>
+                                        <strong>120+</strong>
+                                        <span>Subjects</span>
+                                    </div>
+                                    <div>
+                                        <strong>8k+</strong>
+                                        <span>Students</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="hero-image-wrap">
+                                    <img src="images/hero-1.png" alt="Student learning with tutor"
+                                        onerror="this.style.display='none'">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center hero-slide">
+                            <div class="col-lg-6">
+                                <span class="hero-badge">Personalized Learning</span>
+                                <h1>One-to-one lessons shaped around student.</h1>
+                                <p>
+                                    Match with tutors based on class level, learning pace, subject goals, availability,
+                                    and preferred teaching language.
+                                </p>
+
+                                <div class="hero-actions">
+                                    <a href="contact.html" class="primary-btn">Book a Demo</a>
+                                    <a href="#how-it-works" class="secondary-btn">How It Works</a>
+                                </div>
+
+                                <div class="hero-mini-stats">
+                                    <div>
+                                        <strong>24h</strong>
+                                        <span>Fast Match</span>
+                                    </div>
+                                    <div>
+                                        <strong>1:1</strong>
+                                        <span>Live Classes</span>
+                                    </div>
+                                    <div>
+                                        <strong>100%</strong>
+                                        <span>Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="hero-image-wrap">
+                                    <img src="images/hero-2.png" alt="Personalized online tutoring session"
+                                        onerror="this.style.display='none'">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center hero-slide">
+                            <div class="col-lg-6">
+                                <span class="hero-badge">Progress You Can Track</span>
+                                <h1>Stay updated on classes, goals, and improvement.</h1>
+                                <p>
+                                    Manage schedules, tutor notes, learning progress, and payments from one simple
+                                    dashboard built for parents and learners.
+                                </p>
+
+                                <div class="hero-actions">
+                                    <a href="dashboard.html" class="primary-btn">Open Dashboard</a>
+                                    <a href="#dashboard-preview" class="secondary-btn">Explore Features</a>
+                                </div>
+
+                                <div class="hero-mini-stats">
+                                    <div>
+                                        <strong>82%</strong>
+                                        <span>Avg Progress</span>
+                                    </div>
+                                    <div>
+                                        <strong>3x</strong>
+                                        <span>Reports</span>
+                                    </div>
+                                    <div>
+                                        <strong>7d</strong>
+                                        <span>Support</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="hero-image-wrap">
+                                    <img src="images/hero-3.png" alt="Learning progress dashboard"
+                                        onerror="this.style.display='none'">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="prev" aria-label="Previous slide">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="next" aria-label="Next slide">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Learning Pathways Start -->
+    <section class="learning-pathways">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <span class="section-subtitle">Learning Pathways</span>
+                <h2 class="section-title">
+                    Personalized Learning for Every Goal
+                </h2>
+                <p class="section-description">
+                    Discover tailored learning journeys designed to help students
+                    excel academically and build future-ready skills.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="pathway-card">
+                        <div class="pathway-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <h4>School Support</h4>
+
+                        <p>
+                            Expert guidance to strengthen performance
+                            across all subjects.
+                        </p>
+
+                        <a href="subject-categories.html">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="pathway-card">
+                        <div class="pathway-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h4>Exam Preparation</h4>
+
+                        <p>
+                            Focused coaching for board exams and competitive tests.
+                        </p>
+
+                        <a href="subject-categories.html">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="pathway-card">
+                        <div class="pathway-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h4>Skill Development</h4>
+
+                        <p>
+                            Learn coding, communication, and future-ready skills.
+                        </p>
+
+                        <a href="subject-categories.html">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="pathway-card">
+                        <div class="pathway-icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+
+                        <h4>Language Learning</h4>
+
+                        <p>
+                            Improve fluency and confidence in multiple languages.
+                        </p>
+
+                        <a href="subject-categories.html">
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Learning Pathways End -->
+
+
+    <!-- How Learnora Works Start -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <span class="section-subtitle">How It Works</span>
+                <h2 class="section-title">
+                    Learning Made Simple
+                </h2>
+                <p class="section-description">
+                    Learnora helps parents find tutors, schedule classes,
+                    and track student progress in one seamless platform.
+                </p>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <!-- Left Side -->
+                <div class="col-lg-6">
+
+                    <div class="step-item">
+                        <span>01</span>
+                        <div>
+                            <h4>Find Tutors</h4>
+                            <p>Explore verified tutors by subject, experience, and ratings.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <span>02</span>
+                        <div>
+                            <h4>Book Sessions</h4>
+                            <p>Choose convenient schedules for online or home tutoring.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <span>03</span>
+                        <div>
+                            <h4>Start Learning</h4>
+                            <p>Attend personalized one-to-one learning sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <span>04</span>
+                        <div>
+                            <h4>Track Progress</h4>
+                            <p>Monitor attendance, reports, and learning outcomes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-lg-6">
+
+                    <div class="process-visual">
+
+                        <div class="home-process-card process-tutor-card">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <h5>Tutor Profile</h5>
+                            <p>Mathematics Expert</p>
+                        </div>
+
+                        <div class="process-arrow">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="home-process-card schedule-card">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <h5>Session Scheduled</h5>
+                            <p>Monday - 6 PM</p>
+                        </div>
+
+                        <div class="process-arrow">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="home-process-card progress-card">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h5>Progress Report</h5>
+                            <p>+82% Improvement</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- How Learnora Works End -->
+
+    <!-- Top Tutors Start -->
+    <section class="top-tutors">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <span class="section-subtitle">Expert Tutors</span>
+                <h2 class="section-title">
+                    Meet Our Top-Rated Tutors
+                </h2>
+                <p class="section-description">
+                    Connect with experienced educators who provide personalized
+                    learning support and help students achieve academic success.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Tutor 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="top-tutor-card">
+
+                        <div class="top-tutor-image">
+                            <img src="images/tutor-1.jpg" alt="Tutor">
+
+                            <div class="top-tutor-actions">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                                <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                                <a href="#"><i class="fa-solid fa-message"></i></a>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="top-tutor-content">
+                            <h3>Priya Sharma</h3>
+                            <span>Mathematics Tutor</span>
+
+                            <div class="top-tutor-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>(4.9)</strong>
+                            </div>
+
+                            <p>8+ Years Experience</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tutor 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="top-tutor-card">
+
+                        <div class="top-tutor-image">
+                            <img src="images/tutor-2.jpg" alt="Tutor">
+
+                            <div class="top-tutor-actions">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                                <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                                <a href="#"><i class="fa-solid fa-message"></i></a>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="top-tutor-content">
+                            <h3>Rahul Verma</h3>
+                            <span>Science Tutor</span>
+
+                            <div class="top-tutor-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>(4.8)</strong>
+                            </div>
+
+                            <p>6+ Years Experience</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tutor 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="top-tutor-card">
+
+                        <div class="top-tutor-image">
+                            <img src="images/tutor-3.jpg" alt="Tutor">
+
+                            <div class="top-tutor-actions">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                                <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                                <a href="#"><i class="fa-solid fa-message"></i></a>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="top-tutor-content">
+                            <h3>Sophia Wilson</h3>
+                            <span>English Tutor</span>
+
+                            <div class="top-tutor-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>(4.9)</strong>
+                            </div>
+
+                            <p>10+ Years Experience</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tutor 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="top-tutor-card">
+
+                        <div class="top-tutor-image">
+                            <img src="images/tutor-4.jpg" alt="Tutor">
+
+                            <div class="top-tutor-actions">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                                <a href="#"><i class="fa-solid fa-calendar-check"></i></a>
+                                <a href="#"><i class="fa-solid fa-message"></i></a>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="top-tutor-content">
+                            <h3>Arjun Kumar</h3>
+                            <span>Computer Science Tutor</span>
+
+                            <div class="top-tutor-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <strong>(4.9)</strong>
+                            </div>
+
+                            <p>7+ Years Experience</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Top Tutors End -->
+
+    <!-- Parent Success Stories Start -->
+    <section class="success-stories">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <span class="section-subtitle">
+                    Success Stories
+                </span>
+
+                <h2 class="section-title">
+                    Trusted by Parents and Students
+                </h2>
+
+                <p class="section-description">
+                    Discover how Learnora is helping students improve
+                    confidence, performance, and academic results.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="row g-4 mb-5">
+
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h3>4.9★</h3>
+                        <p>Average Parent Rating</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h3>8,000+</h3>
+                        <p>Students Supported</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stats-card">
+                        <h3>500+</h3>
+                        <p>Verified Tutors</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Reviews -->
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <p>
+                            "My daughter improved significantly in Mathematics
+                            within three months. The tutor was excellent and
+                            progress tracking helped us stay informed."
+                        </p>
+
+                        <h5>Priya N.</h5>
+                        <span>Parent of Grade 8 Student</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="review-card">
+                        <p>
+                            "Finding a tutor was simple and scheduling classes
+                            was effortless. Learnora saved us a lot of time. This was excellent and Looking forward!"
+                        </p>
+
+                        <h5>Arun K.</h5>
+                        <span>Parent of Grade 10 Student</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Parent Success Stories End -->
+
+    <!-- Dashboard Preview Start -->
+
+    <section class="dashboard-preview" id="dashboard-preview">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <span class="section-subtitle">
+                        Progress Tracking
+                    </span>
+
+                    <h2 class="section-title">
+                        Monitor Every Step of Your Child's Learning Journey
+                    </h2>
+
+                    <div class="dashboard-features">
+
+                        <div class="home-feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Progress Reports
+                        </div>
+
+
+                        <div class="home-feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Tutor Feedback
+                        </div>
+
+                        <div class="home-feature-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Learning Analytics
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="primary-btn">
+                        Explore Dashboard
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="dashboard-image">
+                        <img src="images/dashboard-preview.png" alt="Dashboard Preview">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dashboard Preview End -->
+
+    <!-- Why Choose Learnora Start -->
+    <section class="home-why-learnora">
+        <div class="container">
+
+            <div class="section-header text-center">
+                <span class="section-subtitle">Why Choose Learnora</span>
+
+                <h2 class="section-title">
+                    Designed for Modern Learning Families
+                </h2>
+
+                <p class="section-description">
+                    Everything parents need to find tutors, manage classes,
+                    and track student success in one place.
+                </p>
+            </div>
+
+            <div class="home-bento-grid">
+
+                <!-- Large Card -->
+                <div class="home-bento-card large-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <h3>Verified Tutors</h3>
+
+                    <p>
+                        Connect with carefully screened and experienced tutors
+                        across a wide range of subjects.
+                    </p>
+
+                    <div class="verification-stack">
+                        <div class="verify-score">
+                            <span>Trust Score</span>
+                            <strong>98%</strong>
+                        </div>
+
+                        <div class="verify-list">
+                            <div>
+                                <i class="fa-solid fa-id-card"></i>
+                                Identity verified
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-briefcase"></i>
+                                Experience reviewed
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                Parent feedback checked
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="home-bento-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <h3>Flexible Scheduling</h3>
+
+                    <p>
+                        Easily book sessions that fit your family's routine.Stay in control with flexible scheduling and
+                        instant confirmations.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="home-bento-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>Progress Tracking</h3>
+
+                    <p>
+                        Monitor attendance, reports, and learning outcomes.Gain valuable insights to support continuous
+                        academic growth.
+                    </p>
+                </div>
+
+                <!-- Wide Card -->
+                <div class="home-bento-card wide-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <h3>Personalized Learning</h3>
+
+                    <p>
+                        Every student receives a customized learning journey
+                        tailored to their strengths, goals, and pace.Adapting to individual learning styles for
+                        long-term academic success.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="home-bento-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+
+                    <h3>Safe Environment</h3>
+
+                    <p>
+                        Secure and trusted learning experiences.Ensuring a safe and supportive environment for every
+                        student.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="home-bento-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <h3>Affordable Plans</h3>
+
+                    <p>
+                        Flexible pricing options for every family.Choose plans that match your learning goals, schedules
+                        and budget.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="home-bento-card">
+                    <div class="home-bento-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>Parent Support</h3>
+
+                    <p>
+                        Get quick help with tutor matching, schedules, and class updates.Our dedicated support team is
+                        always ready to assist you.
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Why Choose Learnora End -->
+
+    <!-- CTA Section Start -->
+    <section class="cta-section">
+        <div class="container">
+
+            <div class="home-cta-wrapper">
+
+                <span class="home-cta-badge">
+                    Start Your Learning Journey Today
+                </span>
+
+                <h2>
+                    Find the Perfect Tutor for Your Child
+                </h2>
+
+                <p>
+                    Connect with verified tutors, schedule flexible sessions,
+                    and track academic progress through one powerful platform.
+                </p>
+
+                <div class="home-cta-buttons">
+                    <a href="#" class="primary-btn">
+                        Find Tutors
+                    </a>
+
+                    <a href="#" class="secondary-btn">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- About -->
+                <div class="col-lg-4">
+
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Learnora Logo">
+                    </div>
+
+                    <p class="footer-description">
+                        Learnora connects parents and students with trusted tutors,
+                        making personalized learning simple, flexible, and effective.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+
+                        <li><a href="#">About Us</a></li>
+
+                        <li><a href="#">Tutors</a></li>
+
+                        <li><a href="#">Pricing</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h4>Support</h4>
+
+                    <ul>
+
+                        <li><a href="#">Help Center</a></li>
+
+                        <li><a href="#">FAQs</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                        <li><a href="#">Support Team</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3">
+
+                    <h4>Contact Info</h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chennai, Tamil Nadu, India
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            hello@learnora.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Learnora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll To Top Button -->
+
+    <button id="scrollTopBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

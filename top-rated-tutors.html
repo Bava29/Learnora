@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid nav-container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Learnora Logo">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                                <li><a class="dropdown-item" href="home2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Tutors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="find-tutors.html">Find Tutors</a></li>
+                                <li><a class="dropdown-item" href="subject-categories.html">Subject Categories</a></li>
+                                <li><a class="dropdown-item" href="top-rated-tutors.html">Top Rated Tutors</a></li>
+                                <li><a class="dropdown-item" href="become-a-tutor.html">Become a Tutor</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Right Side -->
+                    <div class="nav-actions">
+
+                        <button class="icon-btn" id="rtlToggle">
+                            <i class="fa-solid fa-right-left"></i>
+                        </button>
+
+                        <button class="icon-btn" id="themeToggle">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+
+                        <a href="login.html" class="secondary-btn">
+                            Login
+                        </a>
+
+                        <a href="dashboard.html" class="primary-btn">
+                            Dashboard
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Top Rated Tutors Hero Start -->
+    <section class="top-rated-hero">
+
+        <div class="container">
+
+            <div class="top-rated-hero-content text-center">
+
+                <span class="top-rated-hero-badge">
+                    Top Rated Tutors
+                </span>
+
+                <h1>
+                    Learn From Our Highest Rated Educators
+                </h1>
+
+                <p>
+                    Explore our top-performing tutors recognized for exceptional
+                    teaching, outstanding student results, and consistently
+                    high ratings across multiple subjects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Top Rated Tutors Hero End -->
+
+
+    <!-- Top Rated Tutors Start -->
+
+    <section class="leaderboard-section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Top Rated Tutors
+                </span>
+
+                <h2 class="section-title">
+                    Meet Our Highest Performing Educators
+                </h2>
+
+                <p class="section-description">
+                    Trusted by thousands of students for exceptional teaching,
+                    outstanding results, and personalized guidance.
+                </p>
+
+            </div>
+
+            <div class="leaderboard-wrapper">
+
+                <!-- Rank 1 -->
+
+                <div class="leaderboard-item rank-one">
+
+                    <div class="rank-badge">
+                        #1
+                    </div>
+
+                    <div class="leaderboard-image">
+
+                        <img src="images/tutor-1.jpg" alt="">
+
+                    </div>
+
+                    <div class="leaderboard-content">
+
+                        <h3>Sarah Johnson</h3>
+
+                        <span class="subject">
+                            Mathematics Tutor
+                        </span>
+
+                        <div class="leaderboard-meta">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.9 Rating
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-user-graduate"></i>
+                                1200 Students
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book-open"></i>
+                                8 Years Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Rank 2 -->
+
+                <div class="leaderboard-item">
+
+                    <div class="rank-badge">
+                        #2
+                    </div>
+
+                    <div class="leaderboard-image">
+
+                        <img src="images/tutor-2.jpg" alt="">
+
+                    </div>
+
+                    <div class="leaderboard-content">
+
+                        <h3>David Miller</h3>
+
+                        <span class="subject">
+                            Science Tutor
+                        </span>
+
+                        <div class="leaderboard-meta">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.8 Rating
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-user-graduate"></i>
+                                980 Students
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book-open"></i>
+                                6 Years Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Rank 3 -->
+
+                <div class="leaderboard-item">
+
+                    <div class="rank-badge">
+                        #3
+                    </div>
+
+                    <div class="leaderboard-image">
+
+                        <img src="images/tutor-3.jpg" alt="">
+
+                    </div>
+
+                    <div class="leaderboard-content">
+
+                        <h3>Emma Wilson</h3>
+
+                        <span class="subject">
+                            English Tutor
+                        </span>
+
+                        <div class="leaderboard-meta">
+
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                4.8 Rating
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-user-graduate"></i>
+                                870 Students
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-book-open"></i>
+                                7 Years Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Top Rated Tutors End -->
+
+    <!-- Tutor Achievement Stats Start -->
+    <section class="achievement-section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Our Achievements
+                </span>
+
+                <h2 class="section-title">
+                    Tutor Achievement Stats
+                </h2>
+
+                <p class="section-description">
+                    Powering academic success through expert guidance,
+                    real numbers, and measurable impact.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <h3>4.9<span>/5</span></h3>
+
+                        <h5>Average Tutor Rating</h5>
+
+                        <p>
+                            Consistently rated excellent by students and parents.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <h3>25,000+</h3>
+
+                        <h5>Students Guided</h5>
+
+                        <p>
+                            Helping learners achieve their academic goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <h3>120,000+</h3>
+
+                        <h5>Learning Hours</h5>
+
+                        <p>
+                            Hours of live and interactive learning delivered.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <h3>50+</h3>
+
+                        <h5>Subjects Covered</h5>
+
+                        <p>
+                            From academic foundations to advanced topics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 5 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>500+</h3>
+
+                        <h5>Active Tutors</h5>
+
+                        <p>
+                            Experienced and verified educators worldwide.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 6 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="achievement-card">
+
+                        <div class="achievement-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <h3>98%</h3>
+
+                        <h5>Parent Satisfaction</h5>
+
+                        <p>
+                            Trusted by families for quality education.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Trust Banner -->
+
+            <div class="trust-banner">
+
+                <div class="trust-icon">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+                <div class="trust-content">
+
+                    <h4>
+                        Excellence You Can Trust. Results You Can See.
+                    </h4>
+
+                    <p>
+                        Join thousands of students who are learning better,
+                        achieving more, and becoming their best.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Tutor Achievement Stats End -->
+
+    <!-- Why Students Love These Tutors Start -->
+
+    <section class="love-tutors-section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Why Students Choose Us
+                </span>
+
+                <h2 class="section-title">
+                    Why Students Love These Tutors
+                </h2>
+
+                <p class="section-description">
+                    Discover what makes our highest-rated tutors trusted by
+                    students and parents across different learning journeys.
+                </p>
+
+            </div>
+
+            <div class="love-layout">
+
+                <!-- Center Circle -->
+
+                <div class="center-circle">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h4>
+                        Top Rated Tutors
+                    </h4>
+
+                </div>
+
+                <!-- Items -->
+
+                <div class="love-item item-1">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <h5>Personalized Learning</h5>
+
+                </div>
+
+                <div class="love-item item-2">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h5>Proven Academic Results</h5>
+
+                </div>
+
+                <div class="love-item item-3">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+
+                    <h5>Flexible Scheduling</h5>
+
+                </div>
+
+                <div class="love-item item-4">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+
+                    <h5>Interactive Teaching</h5>
+
+                </div>
+
+                <div class="love-item item-5">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <h5>Progress Tracking</h5>
+
+                </div>
+
+                <div class="love-item item-6">
+
+                    <div class="love-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h5>Expert Guidance</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Students Love These Tutors End -->
+
+    <!-- Student Success Stories Start -->
+
+    <section class="top-rated-success-stories-section">
+
+        <div class="container">
+
+            <div class="section-header text-center">
+
+                <span class="section-subtitle">
+                    Success Stories
+                </span>
+
+                <h2 class="section-title">
+                    Real Results From Real Learners
+                </h2>
+
+                <p class="section-description">
+                    Discover how Learnora tutors have helped students
+                    improve confidence, grades, and academic performance.
+                </p>
+
+            </div>
+
+            <div class="stories-wrapper">
+
+                <!-- Featured Story -->
+
+                <div class="featured-story">
+
+                    <div class="top-rated-story-user">
+
+                        <img src="images/top-student-1.jpg" alt="">
+
+                        <div>
+
+                            <h4>Emma Johnson</h4>
+
+                            <span>Student</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="top-rated-story-rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p>
+                        Thanks to my Learnora tutor, I improved my mathematics
+                        grades from average scores to being one of the top
+                        students in my class. The personalized lessons made
+                        learning enjoyable and effective.
+                    </p>
+
+                    <div class="story-badge">
+
+                        Academic Excellence Award
+
+                    </div>
+
+                </div>
+
+                <!-- Side Testimonials -->
+
+                <div class="testimonial-column">
+
+                    <div class="mini-testimonial">
+
+                        <div class="testimonial-top">
+
+                            <img src="images/parent-1.jpg" alt="">
+
+                            <div>
+
+                                <h5>Sarah Wilson</h5>
+
+                                <span>Parent</span>
+
+                            </div>
+
+                        </div>
+
+                        <p>
+                            The tutor's guidance helped my daughter gain
+                            confidence and achieve excellent results.
+                        </p>
+
+                    </div>
+
+                    <div class="mini-testimonial">
+
+                        <div class="testimonial-top">
+
+                            <img src="images/top-student-2.jpg" alt="">
+
+                            <div>
+
+                                <h5>Michael Davis</h5>
+
+                                <span>Student</span>
+
+                            </div>
+
+                        </div>
+
+                        <p>
+                            Interactive lessons and expert support made
+                            learning science much easier for me.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Student Success Stories End -->
+
+
+    <!-- Join A Top Rated Class Start -->
+
+    <section class="top-class-cta">
+
+        <div class="container">
+
+            <div class="top-rated-cta-wrapper">
+
+                <div class="row align-items-center">
+
+                    <!-- Content -->
+
+                    <div class="col-lg-7">
+
+                        <div class="cta-content">
+
+                            <span class="top-rated-cta-badge">
+                                Join Learnora Today
+                            </span>
+
+                            <h2>
+                                Learn From Top-Rated Tutors And
+                                Unlock Your Full Potential
+                            </h2>
+
+                            <p>
+                                Connect with expert educators, personalized
+                                learning plans, and proven teaching methods
+                                trusted by thousands of students worldwide.
+                            </p>
+
+                            <div class="cta-stats">
+
+                                <div class="cta-stat">
+
+                                    <h3>4.9+</h3>
+
+                                    <span>
+                                        Average Rating
+                                    </span>
+
+                                </div>
+
+                                <div class="cta-stat">
+
+                                    <h3>8K+</h3>
+
+                                    <span>
+                                        Students Guided
+                                    </span>
+
+                                </div>
+
+                                <div class="cta-stat">
+
+                                    <h3>500+</h3>
+
+                                    <span>
+                                        Expert Tutors
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="cta-btn">
+
+                                Find Your Tutor
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Illustration Area -->
+
+                    <div class="col-lg-5">
+
+                        <div class="cta-image">
+
+                            <img src="images/subject-guidance.png" alt="Top Rated Tutor">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Join A Top Rated Class End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- About -->
+                <div class="col-lg-4">
+
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Learnora Logo">
+                    </div>
+
+                    <p class="footer-description">
+                        Learnora connects parents and students with trusted tutors,
+                        making personalized learning simple, flexible, and effective.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+
+                        <li><a href="#">About Us</a></li>
+
+                        <li><a href="#">Tutors</a></li>
+
+                        <li><a href="#">Pricing</a></li>
+
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h4>Support</h4>
+
+                    <ul>
+
+                        <li><a href="#">Help Center</a></li>
+
+                        <li><a href="#">FAQs</a></li>
+
+                        <li><a href="#">Privacy Policy</a></li>
+
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                        <li><a href="#">Support Team</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3">
+
+                    <h4>Contact Info</h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chennai, Tamil Nadu, India
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            +91 98765 43210
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            hello@learnora.com
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Learnora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll To Top Button -->
+
+    <button id="scrollTopBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

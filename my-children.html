@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="dashboard-page">
+
+    <aside class="dashboard-sidebar">
+        <a href="index.html" class="dashboard-brand" aria-label="Learnora home">
+            <img src="images/logo.png" alt="Learnora">
+        </a>
+
+        <nav class="dashboard-menu" aria-label="Parent dashboard menu">
+            <a href="dashboard.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="my-children.html" class="dashboard-menu-link active">
+                <i class="fa-solid fa-children"></i>
+                <span>My Children</span>
+            </a>
+            <a href="my-tutors.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>My Tutors</span>
+            </a>
+            <a href="booked-sessions.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Booked Sessions</span>
+            </a>
+            <a href="learning-progress.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Learning Progress</span>
+            </a>
+            <a href="payments.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Payments</span>
+            </a>
+            <a href="messages.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+        </nav>
+
+        <button class="dashboard-logout" type="button" data-logout-trigger>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+    </aside>
+
+    <div class="dashboard-shell">
+        <header class="dashboard-topbar">
+            <div class="topbar-copy">
+                <span>Family Learners</span>
+                <h1>My Children</h1>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="topbar-icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+                <button class="topbar-icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="dropdown profile-dropdown">
+                    <button class="profile-trigger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="profile-avatar">P</span>
+                        <span class="profile-meta">
+                            <strong>Priya Sharma</strong>
+                            <small>Parent</small>
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                        <li>
+                            <button class="dropdown-item" type="button" data-logout-trigger>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+
+            <section class="dash-page-intro">
+                <div>
+                    <span>My Children</span>
+                    <h2>Manage each child's learning profile</h2>
+                    <p>Review subjects, tutor coverage, academic strengths, and recent learning actions for every child.</p>
+                </div>
+                <button class="dash-soft-btn" type="button"><i class="fa-solid fa-plus"></i> Add Child</button>
+            </section>
+
+            <section class="dash-section">
+                <div class="dash-section-heading"><div><span>Children Overview Cards</span><h3>Active learner profiles</h3><p>Profile cards summarize each child's grade, enrolled subjects, tutor coverage, and current learning focus.</p></div></div>
+                <div class="dash-profile-grid">
+                    <article class="dash-child-profile"><div class="dash-avatar">A</div><div><h4>Ananya Sharma</h4><p>Grade 8 &bull; Mathematics, English</p></div><ul><li><span>Sessions</span><strong>14</strong></li><li><span>Progress</span><strong>92%</strong></li><li><span>Tutors</span><strong>2</strong></li></ul></article>
+                    <article class="dash-child-profile"><div class="dash-avatar green">R</div><div><h4>Arjun Sharma</h4><p>Grade 6 &bull; Science, Computers</p></div><ul><li><span>Sessions</span><strong>11</strong></li><li><span>Progress</span><strong>81%</strong></li><li><span>Tutors</span><strong>2</strong></li></ul></article>
+                </div>
+            </section>
+
+            <section class="dash-section">
+                <div class="dash-section-heading"><div><span>Academic Performance Summary</span><h3>Subject health by child</h3><p>Use compact progress widgets to spot strong areas and subjects that need parent follow-up.</p></div></div>
+                <div class="dash-two-column">
+                    <article class="dash-card"><h4>Ananya Sharma</h4><div class="dash-progress-list"><div><label>Mathematics <b>92%</b></label><span><i style="width:92%"></i></span></div><div><label>English <b>78%</b></label><span><i style="width:78%"></i></span></div></div></article>
+                    <article class="dash-card"><h4>Arjun Sharma</h4><div class="dash-progress-list"><div><label>Science <b>84%</b></label><span><i style="width:84%"></i></span></div><div><label>Computers <b>88%</b></label><span><i style="width:88%"></i></span></div></div></article>
+                </div>
+            </section>
+
+            <section class="dash-section">
+                <div class="dash-section-heading"><div><span>Recent Learning Activities</span><h3>Latest study updates</h3><p>An activity list keeps parents informed about assignments, tutor remarks, and completed practice work.</p></div></div>
+                <div class="dash-activity-list">
+                    <div><i class="fa-solid fa-book-open"></i><strong>Ananya completed algebra revision</strong><span>Sarah marked 18 of 20 answers correct.</span></div>
+                    <div><i class="fa-solid fa-flask"></i><strong>Arjun submitted science worksheet</strong><span>Needs extra support in force and motion concepts.</span></div>
+                    <div><i class="fa-solid fa-comment-dots"></i><strong>English tutor added reading notes</strong><span>Vocabulary practice recommended for the weekend.</span></div>
+                </div>
+            </section>
+        </main>
+
+        <div class="logout-modal" id="logoutModal" aria-hidden="true">
+            <div class="logout-dialog" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+                <div class="logout-dialog-icon">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <h2 id="logoutTitle">Are you sure you want to logout?</h2>
+                <div class="logout-dialog-actions">
+                    <button type="button" class="logout-confirm-btn" id="confirmLogout">Yes</button>
+                    <button type="button" class="logout-cancel-btn" id="cancelLogout">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

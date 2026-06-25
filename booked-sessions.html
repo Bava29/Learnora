@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="dashboard-page booked-sessions-page">
+
+    <aside class="dashboard-sidebar">
+        <a href="index.html" class="dashboard-brand" aria-label="Learnora home">
+            <img src="images/logo.png" alt="Learnora">
+        </a>
+
+        <nav class="dashboard-menu" aria-label="Parent dashboard menu">
+            <a href="dashboard.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="my-children.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-children"></i>
+                <span>My Children</span>
+            </a>
+            <a href="my-tutors.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>My Tutors</span>
+            </a>
+            <a href="booked-sessions.html" class="dashboard-menu-link active">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Booked Sessions</span>
+            </a>
+            <a href="learning-progress.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Learning Progress</span>
+            </a>
+            <a href="payments.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Payments</span>
+            </a>
+            <a href="messages.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+        </nav>
+
+        <button class="dashboard-logout" type="button" data-logout-trigger>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+    </aside>
+
+    <div class="dashboard-shell">
+        <header class="dashboard-topbar">
+            <div class="topbar-copy">
+                <span>Class Schedule</span>
+                <h1>Booked Sessions</h1>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="topbar-icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+                <button class="topbar-icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="dropdown profile-dropdown">
+                    <button class="profile-trigger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="profile-avatar">P</span>
+                        <span class="profile-meta">
+                            <strong>Priya Sharma</strong>
+                            <small>Parent</small>
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                        <li>
+                            <button class="dropdown-item" type="button" data-logout-trigger>
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+
+            <section class="dash-page-intro"><div><span>Booked Sessions</span><h2>Plan and track every learning session</h2><p>Review upcoming classes, weekly schedule blocks, and previous session outcomes.</p></div><button class="dash-soft-btn" type="button"><i class="fa-solid fa-calendar-plus"></i> Book Session</button></section>
+
+            <section class="dash-section"><div class="dash-section-heading"><div><span>Upcoming Sessions</span><h3>Classes confirmed by tutors</h3><p>Session cards show timing, tutor, child, mode, and what the child should prepare before class.</p></div></div><div class="dash-session-grid"><article><i class="fa-solid fa-calculator"></i><h4>Mathematics</h4><p>Today, 6:00 PM with Sarah Johnson</p><span>Ananya &bull; Algebra worksheet</span></article><article><i class="fa-solid fa-flask"></i><h4>Science</h4><p>Thu, 5:30 PM with David Miller</p><span>Arjun &bull; Physics numericals</span></article><article><i class="fa-solid fa-book-open"></i><h4>English</h4><p>Sat, 10:00 AM with Sophia Wilson</p><span>Ananya &bull; Reading practice</span></article></div></section>
+
+            <section class="dash-section"><div class="dash-section-heading"><div><span>Session Calendar / Schedule</span><h3>Weekly tutoring rhythm</h3><p>A calendar-style schedule helps parents see class load, free days, and learning balance across children.</p></div></div><div class="dash-calendar"><div><b>Mon</b><span>Math<br>6 PM</span></div><div><b>Tue</b><span class="empty">Self Study</span></div><div><b>Wed</b><span>English<br>7 PM</span></div><div><b>Thu</b><span>Science<br>5:30 PM</span></div><div><b>Fri</b><span class="empty">Revision</span></div><div><b>Sat</b><span>English<br>10 AM</span></div><div><b>Sun</b><span class="empty">Break</span></div></div></section>
+
+            <section class="dash-section"><div class="dash-section-heading"><div><span>Session History</span><h3>Completed class records</h3><p>A structured history table helps parents audit attendance, topics covered, and tutor notes.</p></div></div><div class="dash-table-card"><table class="dash-table"><thead><tr><th>Date</th><th>Subject</th><th>Tutor</th><th>Attendance</th><th>Outcome</th></tr></thead><tbody><tr><td>21 Jun</td><td>Mathematics</td><td>Sarah Johnson</td><td><span class="dash-pill success">Present</span></td><td>Quadratics completed</td></tr><tr><td>19 Jun</td><td>Science</td><td>David Miller</td><td><span class="dash-pill success">Present</span></td><td>Forces revised</td></tr><tr><td>17 Jun</td><td>English</td><td>Sophia Wilson</td><td><span class="dash-pill warning">Late</span></td><td>Reading fluency practice</td></tr></tbody></table></div></section>
+        </main>
+
+        <div class="logout-modal" id="logoutModal" aria-hidden="true">
+            <div class="logout-dialog" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+                <div class="logout-dialog-icon">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <h2 id="logoutTitle">Are you sure you want to logout?</h2>
+                <div class="logout-dialog-actions">
+                    <button type="button" class="logout-confirm-btn" id="confirmLogout">Yes</button>
+                    <button type="button" class="logout-cancel-btn" id="cancelLogout">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
