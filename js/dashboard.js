@@ -92,6 +92,7 @@ const cancelLogout = document.getElementById("cancelLogout");
 
 const openLogoutModal = () => {
     if (!logoutModal) return;
+    dashboardPage.classList.add("logout-modal-open");
     logoutModal.classList.add("show");
     logoutModal.setAttribute("aria-hidden", "false");
     cancelLogout?.focus();
@@ -99,14 +100,17 @@ const openLogoutModal = () => {
 
 const closeLogoutModal = () => {
     if (!logoutModal) return;
+    dashboardPage.classList.remove("logout-modal-open");
     logoutModal.classList.remove("show");
     logoutModal.setAttribute("aria-hidden", "true");
 };
 
 logoutTriggers.forEach((trigger) => {
-    trigger.addEventListener("click", () => {
+    trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
         closeDashboardSidebar();
-        openLogoutModal();
+        window.requestAnimationFrame(openLogoutModal);
     });
 });
 
