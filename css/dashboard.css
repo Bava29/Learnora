@@ -290,7 +290,7 @@ body.dashboard-page {
 
 .profile-dropdown .dropdown-menu {
     min-width: 210px;
-    padding: 10px;
+    padding: 2px;
     border: 1px solid var(--dash-border);
     border-radius: 18px;
     box-shadow: var(--dash-shadow);
@@ -1075,6 +1075,38 @@ body.dashboard-page {
     color: var(--dash-text);
 }
 
+.booked-sessions-page .dash-table-card {
+    overflow: visible;
+}
+
+.booked-sessions-page .dash-table {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.booked-sessions-page .dash-table th,
+.booked-sessions-page .dash-table td {
+    padding: 14px 12px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.payments-page .dash-table-card {
+    overflow: visible;
+}
+
+.payments-page .dash-table {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.payments-page .dash-table th,
+.payments-page .dash-table td {
+    padding: 14px 12px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
 .dash-pill.success {
     background: #dcfce7;
     color: #15803d;
@@ -1398,6 +1430,347 @@ body.dashboard-page {
     background: #fff;
     box-shadow: 0 12px 24px rgba(15, 23, 42, .05);
 }
+
+/**************************settings page**************************/
+
+.settings-page .settings-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.settings-page .settings-form {
+    display: grid;
+    gap: 22px;
+}
+
+.settings-page .settings-profile-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.settings-page .settings-avatar-panel {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 18px;
+    min-height: 248px;
+    padding: 22px;
+    border: 1px solid var(--dash-border);
+    border-radius: 24px;
+    background:
+        linear-gradient(135deg, rgba(37, 99, 235, .08), rgba(16, 185, 129, .06)),
+        var(--dash-panel);
+}
+
+.settings-page .settings-avatar {
+    display: grid;
+    width: 112px;
+    height: 112px;
+    place-items: center;
+    border: 6px solid rgba(255, 255, 255, .9);
+    border-radius: 32px;
+    background: linear-gradient(135deg, var(--dash-primary), var(--dash-secondary));
+    box-shadow: 0 18px 34px rgba(37, 99, 235, .22);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.settings-page .settings-field-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.settings-page .settings-security-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.settings-page .settings-field {
+    display: grid;
+    gap: 9px;
+}
+
+.settings-page .settings-field span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--dash-text);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.settings-page .settings-field span i {
+    color: var(--dash-primary);
+}
+
+.settings-page .settings-field input {
+    width: 100%;
+    min-height: 58px;
+    padding: 0 18px;
+    border: 1px solid var(--dash-border);
+    border-radius: 16px;
+    background: #fff;
+    color: var(--dash-text);
+    font: 600 16px 'Inter', sans-serif;
+    outline: 0;
+    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.settings-page .settings-field input::placeholder {
+    color: var(--dash-muted);
+    font-weight: 500;
+}
+
+.settings-page .settings-field input:focus {
+    border-color: rgba(37, 99, 235, .55);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .12);
+}
+
+.settings-page .settings-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settings-page .settings-actions .dashboard-primary-action {
+    border: 0;
+    background: linear-gradient(135deg, var(--dash-primary), #3b82f6);
+    color: #fff;
+}
+
+.settings-page .settings-toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 96px;
+    padding: 20px 22px;
+    border: 1px solid var(--dash-border);
+    border-radius: 20px;
+    background:
+        linear-gradient(135deg, rgba(37, 99, 235, .055), rgba(16, 185, 129, .04)),
+        #fff;
+}
+
+.settings-page .settings-security-grid .settings-toggle-row {
+    grid-column: 1 / -1;
+}
+
+.settings-page .settings-toggle-row>div {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.settings-page .settings-toggle-row strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--dash-text);
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.settings-page .settings-toggle-row strong i {
+    color: var(--dash-primary);
+}
+
+.settings-page .settings-toggle-row span {
+    display: block;
+    margin-top: 5px;
+    color: var(--dash-muted);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.settings-page .settings-toggle {
+    position: relative;
+    width: 64px;
+    height: 36px;
+    flex: 0 0 64px;
+    cursor: pointer;
+}
+
+.settings-page .settings-toggle input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.settings-page .settings-toggle>span {
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--dash-border);
+    border-radius: 100px;
+    background: #e2e8f0;
+    transition: background-color .22s ease, border-color .22s ease;
+}
+
+.settings-page .settings-toggle>span::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, .18);
+    transition: transform .22s ease;
+}
+
+.settings-page .settings-toggle input:checked+span {
+    border-color: rgba(37, 99, 235, .45);
+    background: linear-gradient(135deg, var(--dash-primary), var(--dash-secondary));
+}
+
+.settings-page .settings-toggle input:checked+span::before {
+    transform: translateX(28px);
+}
+
+.settings-page .settings-toggle input:focus-visible+span {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .16);
+}
+
+.settings-page .settings-preference-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.settings-page .settings-preference-grid .settings-toggle-row:last-child {
+    grid-column: 1 / -1;
+}
+
+body.dark-mode.dashboard-page.settings-page .settings-avatar-panel,
+body.dark-mode.dashboard-page.settings-page .settings-toggle-row {
+    background: rgba(15, 23, 42, .5);
+    border-color: var(--dash-border);
+}
+
+body.dark-mode.dashboard-page.settings-page .settings-field input {
+    border-color: var(--dash-border);
+    background: #0f172a;
+    color: var(--dash-text);
+}
+
+body.dark-mode.dashboard-page.settings-page .settings-toggle>span {
+    background: #1e293b;
+}
+
+body.dark-mode.dashboard-page.settings-page .settings-avatar {
+    border-color: rgba(17, 28, 49, .95);
+}
+
+html[dir="rtl"] .settings-page .settings-profile-layout,
+html[dir="rtl"] .settings-page .settings-field-grid,
+html[dir="rtl"] .settings-page .settings-preference-grid,
+html[dir="rtl"] .settings-page .settings-toggle-row {
+    direction: rtl;
+}
+
+html[dir="rtl"] .settings-page .settings-toggle>span::before {
+    right: 4px;
+    left: auto;
+}
+
+html[dir="rtl"] .settings-page .settings-toggle input:checked+span::before {
+    transform: translateX(-28px);
+}
+
+@media (max-width: 1199px) {
+    .settings-page .settings-security-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .settings-page .settings-profile-layout,
+    .settings-page .settings-field-grid,
+    .settings-page .settings-security-grid,
+    .settings-page .settings-preference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-page .settings-avatar-panel {
+        min-height: auto;
+    }
+
+    .settings-page .settings-preference-grid .settings-toggle-row:last-child {
+        grid-column: auto;
+    }
+
+    .settings-page .settings-toggle-row {
+        align-items: center;
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .settings-page .settings-toggle-row strong {
+        font-size: 18px;
+    }
+
+    .settings-page .settings-toggle-row span {
+        font-size: 15px;
+    }
+
+    .settings-page .settings-actions {
+        justify-content: stretch;
+    }
+
+    .settings-page .settings-actions .dashboard-primary-action {
+        width: 100%;
+    }
+}
+
+/* ===== Settings Toggle Final Override ===== */
+
+.settings-toggle {
+    width: 54px !important;
+    height: 30px !important;
+    display: inline-block !important;
+    position: relative !important;
+}
+
+.settings-toggle span {
+    display: block !important;
+    width: 54px !important;
+    height: 30px !important;
+    border-radius: 30px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.settings-toggle span::before {
+    width: 24px !important;
+    height: 24px !important;
+    left: 3px !important;
+    top: 3px !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+}
+
+.settings-toggle input:checked+span::before {
+    left: 27px !important;
+    transform: none !important;
+}
+
+.settings-profile-section .settings-actions {
+    grid-column: 1 / 2;
+    /* Phone Number column */
+    justify-content: flex-start;
+    margin-top: 8px;
+}
+
+/************************************Dark mode*********************************/
 
 body.dark-mode.dashboard-page {
     --dash-bg: #0f172a;
@@ -2257,6 +2630,36 @@ html[dir="rtl"] .dash-table {
         min-width: 640px;
     }
 
+    .booked-sessions-page .dash-table {
+        min-width: 0;
+    }
+
+    .booked-sessions-page .dash-table th,
+    .booked-sessions-page .dash-table td {
+        padding: 11px 8px;
+        font-size: 11px;
+    }
+
+    .booked-sessions-page .dash-pill {
+        padding: 5px 7px;
+        font-size: 10px;
+    }
+
+    .payments-page .dash-table {
+        min-width: 0;
+    }
+
+    .payments-page .dash-table th,
+    .payments-page .dash-table td {
+        padding: 11px 8px;
+        font-size: 11px;
+    }
+
+    .payments-page .dash-pill {
+        padding: 5px 7px;
+        font-size: 10px;
+    }
+
     .dash-page-intro h2,
     .dashboard-hero-card h2 {
         font-size: clamp(28px, 9vw, 36px);
@@ -2346,4 +2749,284 @@ body.dark-mode .dash-calendar div span.empty {
     background: #1e293b !important;
     color: #cbd5e1 !important;
     border: 1px solid rgba(255, 255, 255, .08) !important;
+}
+
+html[dir="rtl"] .settings-profile-section .settings-actions {
+    justify-content: flex-end !important;
+}
+
+html[dir="rtl"] .settings-profile-section .dashboard-primary-action {
+    margin-inline-start: auto;
+    margin-inline-end: 0;
+}
+
+/* ===== Settings Profile Save Button Final Fix ===== */
+
+.settings-profile-section .settings-field-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.settings-profile-section .settings-actions {
+    grid-column: 1;
+    justify-self: start;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.settings-profile-section .settings-actions .dashboard-primary-action {
+    margin: 0;
+}
+
+/* RTL */
+
+html[dir="rtl"] .settings-profile-section .settings-actions {
+    grid-column: 2;
+    justify-self: end;
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .settings-profile-section .settings-actions .dashboard-primary-action {
+    margin: 0;
+}
+
+/***********override code***************/
+
+.dashboard-sidebar {
+    padding: 18px 14px 16px !important;
+}
+
+.dashboard-menu-link,
+.dashboard-logout {
+    padding: 9px 12px !important;
+    gap: 10px !important;
+    min-height: 42px;
+}
+
+.dashboard-menu-link i,
+.dashboard-logout i {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.dashboard-brand {
+    margin-bottom: 16px !important;
+}
+
+/* ===== My Children Activity List Alignment Fix ===== */
+
+.dash-activity-list>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.dash-activity-list>div i {
+    flex-shrink: 0;
+}
+
+/* Text wrapper */
+.dash-activity-list>div strong {
+    display: block !important;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.dash-activity-list>div span {
+    display: block !important;
+    line-height: 1.6;
+    color: var(--dash-muted);
+}
+
+.activity-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.activity-content strong {
+    margin-bottom: 6px;
+}
+
+.activity-content span {
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .dashboard-main {
+        padding-top: calc(var(--dash-topbar) + 42px) !important;
+    }
+
+    .dash-page-intro {
+        min-height: auto;
+        margin-top: 0;
+        padding: 26px 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dashboard-main {
+        padding-top: calc(var(--dash-topbar) + 34px) !important;
+    }
+
+    .dash-page-intro {
+        border-radius: 22px;
+    }
+}
+
+/* Mobile dashboard overflow and spacing polish */
+@media (max-width: 767px) {
+    .dashboard-shell {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .dashboard-main {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 104px !important;
+        overflow-y: visible;
+    }
+
+    .dash-page-intro {
+        gap: 18px;
+        padding: 24px 20px;
+    }
+
+    .dash-page-intro h2 {
+        font-size: 27px;
+        line-height: 1.16;
+    }
+
+    .dash-page-intro p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .dash-table-card,
+    .booked-sessions-page .dash-table-card,
+    .payments-page .dash-table-card {
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .dash-table,
+    .booked-sessions-page .dash-table,
+    .payments-page .dash-table {
+        min-width: 620px;
+        table-layout: auto;
+    }
+
+    .dash-table th,
+    .dash-table td,
+    .booked-sessions-page .dash-table th,
+    .booked-sessions-page .dash-table td,
+    .payments-page .dash-table th,
+    .payments-page .dash-table td {
+        padding: 13px 14px;
+        white-space: normal;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .dash-pill {
+        white-space: nowrap;
+    }
+
+    .dash-alert-grid article {
+        display: grid;
+        align-content: start;
+        gap: 12px;
+    }
+
+    .dash-alert-grid article>*+* {
+        margin-top: 0;
+    }
+
+    .dash-alert-grid article i {
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dashboard-main {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .dash-section {
+        overflow: visible;
+    }
+
+    .dash-table-card {
+        margin-right: -6px;
+        padding-bottom: 4px;
+    }
+}
+
+/* Current responsive QA fixes */
+.dash-card h4 + .dash-timeline {
+    margin-top: 18px;
+}
+
+.messages-page .dash-table-card {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-gutter: stable;
+}
+
+.messages-page .dash-table {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+.messages-page .dash-table th,
+.messages-page .dash-table td {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.messages-page .dash-table th:nth-child(1),
+.messages-page .dash-table td:nth-child(1) {
+    width: 102px;
+}
+
+.messages-page .dash-table th:nth-child(2),
+.messages-page .dash-table td:nth-child(2) {
+    width: 150px;
+}
+
+.logout-modal.show {
+    z-index: 3000;
+}
+
+body.dashboard-page.logout-modal-open .dashboard-sidebar-overlay,
+body.dashboard-page:has(.logout-modal.show) .dashboard-sidebar-overlay {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .messages-page .dash-table th,
+    .messages-page .dash-table td {
+        padding: 13px 10px;
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    .messages-page .dash-table th:nth-child(1),
+    .messages-page .dash-table td:nth-child(1) {
+        width: 96px;
+    }
+
+    .messages-page .dash-table th:nth-child(2),
+    .messages-page .dash-table td:nth-child(2) {
+        width: 130px;
+    }
 }

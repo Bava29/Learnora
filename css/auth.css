@@ -1555,3 +1555,140 @@ html[dir="rtl"] .password-toggle {
     left: 8px;
     right: auto;
 }
+
+/* Use original Learnora logo */
+.auth-brand img,
+.auth-brand--mobile img {
+    filter: none !important;
+}
+
+/* =====================================================
+   iPad Override (768px - 991px)
+===================================================== */
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .auth-shell {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        min-height: 100vh;
+    }
+
+    .auth-showcase {
+        display: flex !important;
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        padding: 32px !important;
+    }
+
+    .auth-form-side {
+        grid-column: auto !important;
+        min-height: 100vh !important;
+        padding: 32px !important;
+    }
+
+    .auth-card {
+        width: 100% !important;
+        max-width: 420px !important;
+        margin: auto !important;
+    }
+
+    .auth-brand--mobile {
+        display: none !important;
+    }
+
+    .showcase-content h1 {
+        font-size: 42px !important;
+    }
+
+    .learning-preview,
+    .journey-map {
+        width: 100% !important;
+    }
+}
+
+/* ======================================
+   Desktop / iPad Pro Perfect Center Split
+====================================== */
+
+@media (min-width:992px) {
+
+    .auth-shell {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: stretch !important;
+        min-height: 100vh !important;
+    }
+
+    .auth-showcase,
+    .auth-form-side {
+        min-height: 100vh !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .auth-showcase {
+        padding: 60px !important;
+    }
+
+    .auth-form-side {
+        padding: 60px !important;
+    }
+
+    .auth-card {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: auto !important;
+    }
+
+    .showcase-content {
+        margin: auto 0 !important;
+    }
+
+    .showcase-proof {
+        margin-top: 40px !important;
+    }
+
+    .auth-trust {
+        margin-top: 40px !important;
+    }
+}
+
+/* ==========================================
+   Login / Signup - Broader Form Layout
+========================================== */
+
+@media (min-width:992px) {
+
+    /* Reduce side padding */
+    .auth-form-side {
+        padding: 60px 25px !important;
+    }
+
+    /* Make form occupy more width */
+    .auth-card,
+    .auth-card--signup {
+        width: 96% !important;
+        max-width: 760px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Signup two-column fields */
+    .field-grid {
+        gap: 18px !important;
+    }
+
+    /* Inputs */
+    .input-wrap {
+        height: 56px !important;
+    }
+
+    /* Social buttons */
+    .social-login-grid {
+        gap: 12px !important;
+    }
+}
