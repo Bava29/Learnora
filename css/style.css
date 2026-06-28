@@ -13215,3 +13215,33 @@ body.dark-mode .leaderboard-meta span {
     }
 
 }
+
+/* Desktop Header Center */
+@media (min-width: 992px) {
+
+    .custom-navbar .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .navbar-brand {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .nav-actions {
+        margin-left: 40px !important;
+    }
+
+}
