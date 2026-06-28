@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Learnora</title>
+    <link rel="icon" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body class="dashboard-page settings-page">
+
+    <aside class="dashboard-sidebar">
+        <a href="index.html" class="dashboard-brand" aria-label="Learnora home">
+            <img src="images/logo.png" alt="Learnora">
+        </a>
+
+        <nav class="dashboard-menu" aria-label="Parent dashboard menu">
+            <a href="dashboard.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="my-children.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-children"></i>
+                <span>My Children</span>
+            </a>
+            <a href="my-tutors.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>My Tutors</span>
+            </a>
+            <a href="booked-sessions.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Booked Sessions</span>
+            </a>
+            <a href="learning-progress.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Learning Progress</span>
+            </a>
+            <a href="payments.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Payments</span>
+            </a>
+            <a href="messages.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+            <a href="settings.html" class="dashboard-menu-link active">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <button class="dashboard-logout" type="button" data-logout-trigger>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Logout</span>
+        </button>
+    </aside>
+
+    <div class="dashboard-shell">
+        <header class="dashboard-topbar">
+            <div class="topbar-copy">
+                <span>Account Settings</span>
+                <h1>Settings</h1>
+            </div>
+
+            <div class="topbar-actions">
+                <button class="topbar-icon-btn" id="rtlToggle" type="button" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+                <button class="topbar-icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="dropdown profile-dropdown">
+                    <button class="profile-trigger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="profile-avatar">P</span>
+                        <span class="profile-meta">
+                            <strong>Priya Sharma</strong>
+                            <small>Parent</small>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+
+            <section class="dash-section settings-section settings-profile-section">
+                <div class="dash-section-heading">
+                    <div>
+                        <span>Profile Information</span>
+                        <h3>Manage your parent profile</h3>
+                        <p>Keep your contact details updated so tutors and Learnora support can reach you quickly.</p>
+                    </div>
+                </div>
+
+                <form class="settings-form" action="#" method="post">
+                    <div class="settings-profile-layout">
+                        <div class="settings-avatar-panel">
+                            <div class="settings-avatar" aria-hidden="true">
+                                <span>PS</span>
+                            </div>
+                            <button class="dash-soft-btn" type="button">
+                                <i class="fa-solid fa-camera"></i>
+                                Change Photo
+                            </button>
+                        </div>
+
+                        <div class="settings-field-grid">
+                            <label class="settings-field">
+                                <span><i class="fa-solid fa-user"></i> Full Name</span>
+                                <input type="text" name="full_name" value="Priya Sharma" placeholder="Enter full name">
+                            </label>
+
+                            <label class="settings-field">
+                                <span><i class="fa-solid fa-envelope"></i> Email Address</span>
+                                <input type="email" name="email" value="priya.sharma@example.com"
+                                    placeholder="Enter email address">
+                            </label>
+
+                            <label class="settings-field">
+                                <span><i class="fa-solid fa-phone"></i> Phone Number</span>
+                                <input type="tel" name="phone" value="+91 98765 43210" placeholder="Enter phone number">
+                            </label>
+
+                            <label class="settings-field">
+                                <span><i class="fa-solid fa-location-dot"></i> Location</span>
+                                <input type="text" name="location" value="Chennai, India" placeholder="Enter location">
+                            </label>
+
+                            <div class="settings-actions">
+                                <button class="dashboard-primary-action" type="submit">
+                                    Save Changes
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+
+            <section class="dash-section settings-section settings-security-section">
+                <div class="dash-section-heading">
+                    <div>
+                        <span>Account Security</span>
+                        <h3>Protect your Learnora account</h3>
+                        <p>Update your password and add an extra security layer for parent dashboard access.</p>
+                    </div>
+                </div>
+
+                <form class="settings-form" action="#" method="post">
+                    <div class="settings-field-grid settings-security-grid">
+                        <label class="settings-field">
+                            <span><i class="fa-solid fa-lock"></i> Current Password</span>
+                            <input type="password" name="current_password" placeholder="Enter current password">
+                        </label>
+
+                        <label class="settings-field">
+                            <span><i class="fa-solid fa-key"></i> New Password</span>
+                            <input type="password" name="new_password" placeholder="Enter new password">
+                        </label>
+
+                        <label class="settings-field">
+                            <span><i class="fa-solid fa-shield-halved"></i> Confirm Password</span>
+                            <input type="password" name="confirm_password" placeholder="Confirm new password">
+                        </label>
+
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-mobile-screen-button"></i> Two-Factor
+                                    Authentication</strong>
+                                <span>Require a verification code when signing in.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="two_factor">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="settings-actions">
+                        <button class="dashboard-primary-action" type="submit">
+                            Update Password
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="dash-section settings-section settings-notifications-section">
+                <div class="dash-section-heading">
+                    <div>
+                        <span>Notification Preferences</span>
+                        <h3>Choose what updates you receive</h3>
+                        <p>Control learning, tutor, reminder, and payment alerts from one place.</p>
+                    </div>
+                </div>
+
+                <form class="settings-form" action="#" method="post">
+                    <div class="settings-preference-grid">
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-envelope-open-text"></i> Email Notifications</strong>
+                                <span>Receive important dashboard updates by email.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="email_notifications" checked>
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-comment-dots"></i> SMS Notifications</strong>
+                                <span>Get urgent reminders and alerts on your phone.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="sms_notifications">
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-bell"></i> Session Reminders</strong>
+                                <span>Notify you before upcoming classes begin.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="session_reminders" checked>
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-message"></i> Tutor Messages</strong>
+                                <span>Alert you when tutors send notes or replies.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="tutor_messages" checked>
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <div class="settings-toggle-row">
+                            <div>
+                                <strong><i class="fa-solid fa-credit-card"></i> Payment Alerts</strong>
+                                <span>Receive reminders for invoices, receipts, and renewals.</span>
+                            </div>
+                            <label class="settings-toggle">
+                                <input type="checkbox" name="payment_alerts" checked>
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="settings-actions">
+                        <button class="dashboard-primary-action" type="submit">
+                            Save Preferences
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

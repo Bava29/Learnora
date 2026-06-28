@@ -23,7 +23,7 @@
         </a>
 
         <nav class="dashboard-menu" aria-label="Parent dashboard menu">
-            <a href="dashboard.html" class="dashboard-menu-link">
+            <a href="dashboard.html" class="dashboard-menu-link active">
                 <i class="fa-solid fa-table-columns"></i>
                 <span>Dashboard</span>
             </a>
@@ -47,9 +47,13 @@
                 <i class="fa-solid fa-wallet"></i>
                 <span>Payments</span>
             </a>
-            <a href="messages.html" class="dashboard-menu-link active">
+            <a href="messages.html" class="dashboard-menu-link">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Messages</span>
+            </a>
+            <a href="settings.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
             </a>
         </nav>
 
@@ -81,31 +85,120 @@
                             <strong>Priya Sharma</strong>
                             <small>Parent</small>
                         </span>
-                        <i class="fa-solid fa-chevron-down"></i>
                     </button>
-
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
-                        <li>
-                            <button class="dropdown-item" type="button" data-logout-trigger>
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
-                            </button>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </header>
 
+
         <main class="dashboard-main">
 
-            <section class="dash-page-intro"><div><span>Messages</span><h2>Stay connected with every tutor</h2><p>Follow recent conversations, unread updates, and communication tasks related to your children's learning.</p></div><button class="dash-soft-btn" type="button"><i class="fa-solid fa-pen"></i> New Message</button></section>
+            <section class="dash-page-intro">
+                <div><span>Messages</span>
+                    <h2>Stay connected with every tutor</h2>
+                    <p>Follow recent conversations, unread updates, and communication tasks related to your children's
+                        learning.</p>
+                </div><button class="dash-soft-btn" type="button"><i class="fa-solid fa-pen"></i> New Message</button>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Recent Conversations</span><h3>Latest tutor threads</h3><p>Conversation cards keep parent-tutor communication organized by child, subject, and latest update.</p></div></div><div class="dash-conversation-list"><article><div class="dash-avatar">S</div><div><h4>Sarah Johnson</h4><p>Ananya completed the practice set. Please review the next worksheet.</p><span>Mathematics &bull; 12 min ago</span></div></article><article><div class="dash-avatar green">D</div><div><h4>David Miller</h4><p>Arjun needs one more revision round for force and motion numericals.</p><span>Science &bull; 1 hr ago</span></div></article><article><div class="dash-avatar amber">S</div><div><h4>Sophia Wilson</h4><p>I shared a reading fluency checklist for Saturday's session.</p><span>English &bull; Yesterday</span></div></article></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Recent Conversations</span>
+                        <h3>Latest tutor threads</h3>
+                        <p>Conversation cards keep parent-tutor communication organized by child, subject, and latest
+                            update.</p>
+                    </div>
+                </div>
+                <div class="dash-conversation-list">
+                    <article>
+                        <div class="dash-avatar">S</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Ananya completed the practice set. Please review the next worksheet.</p><span>Mathematics
+                                &bull; 12 min ago</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="dash-avatar green">D</div>
+                        <div>
+                            <h4>David Miller</h4>
+                            <p>Arjun needs one more revision round for force and motion numericals.</p><span>Science
+                                &bull; 1 hr ago</span>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="dash-avatar amber">S</div>
+                        <div>
+                            <h4>Sophia Wilson</h4>
+                            <p>I shared a reading fluency checklist for Saturday's session.</p><span>English &bull;
+                                Yesterday</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Unread Messages</span><h3>Updates waiting for response</h3><p>Unread message widgets highlight tutor notes that may require confirmation, rescheduling, or parent approval.</p></div></div><div class="dash-alert-grid"><article><i class="fa-solid fa-envelope"></i><strong>2 Tutor Notes</strong><p>Feedback messages from Sarah and David need review.</p></article><article><i class="fa-solid fa-calendar-days"></i><strong>1 Schedule Request</strong><p>Science tutor requested a Thursday timing confirmation.</p></article><article><i class="fa-solid fa-file-lines"></i><strong>1 Assignment Update</strong><p>New English reading worksheet is attached.</p></article></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Unread Messages</span>
+                        <h3>Updates waiting for response</h3>
+                        <p>Unread message widgets highlight tutor notes that may require confirmation, rescheduling, or
+                            parent approval.</p>
+                    </div>
+                </div>
+                <div class="dash-alert-grid">
+                    <article><i class="fa-solid fa-envelope"></i><strong>2 Tutor Notes</strong>
+                        <p>Feedback messages from Sarah and David need review.</p>
+                    </article>
+                    <article><i class="fa-solid fa-calendar-days"></i><strong>1 Schedule Request</strong>
+                        <p>Science tutor requested a Thursday timing confirmation.</p>
+                    </article>
+                    <article><i class="fa-solid fa-file-lines"></i><strong>1 Assignment Update</strong>
+                        <p>New English reading worksheet is attached.</p>
+                    </article>
+                </div>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Tutor Communication Center</span><h3>Parent action queue</h3><p>A focused action list helps parents reply faster, approve changes, and keep learning on schedule.</p></div></div><div class="dash-table-card"><table class="dash-table"><thead><tr><th>Priority</th><th>Tutor</th><th>Topic</th><th>Recommended Action</th></tr></thead><tbody><tr><td><span class="dash-pill warning">High</span></td><td>David Miller</td><td>Session timing</td><td>Confirm Thursday 5:30 PM</td></tr><tr><td><span class="dash-pill success">Normal</span></td><td>Sarah Johnson</td><td>Worksheet feedback</td><td>Review practice notes</td></tr><tr><td><span class="dash-pill success">Normal</span></td><td>Sophia Wilson</td><td>Reading plan</td><td>Download checklist</td></tr></tbody></table></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Tutor Communication Center</span>
+                        <h3>Parent action queue</h3>
+                        <p>A focused action list helps parents reply faster, approve changes, and keep learning on
+                            schedule.</p>
+                    </div>
+                </div>
+                <div class="dash-table-card">
+                    <table class="dash-table">
+                        <thead>
+                            <tr>
+                                <th>Priority</th>
+                                <th>Tutor</th>
+                                <th>Topic</th>
+                                <th>Recommended Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="dash-pill warning">High</span></td>
+                                <td>David Miller</td>
+                                <td>Session timing</td>
+                                <td>Confirm Thursday 5:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dash-pill success">Normal</span></td>
+                                <td>Sarah Johnson</td>
+                                <td>Worksheet feedback</td>
+                                <td>Review practice notes</td>
+                            </tr>
+                            <tr>
+                                <td><span class="dash-pill success">Normal</span></td>
+                                <td>Sophia Wilson</td>
+                                <td>Reading plan</td>
+                                <td>Download checklist</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </main>
 
         <div class="logout-modal" id="logoutModal" aria-hidden="true">
@@ -122,9 +215,9 @@
         </div>
     </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
 
 </body>
 

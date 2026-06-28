@@ -23,7 +23,7 @@
         </a>
 
         <nav class="dashboard-menu" aria-label="Parent dashboard menu">
-            <a href="dashboard.html" class="dashboard-menu-link">
+            <a href="dashboard.html" class="dashboard-menu-link active">
                 <i class="fa-solid fa-table-columns"></i>
                 <span>Dashboard</span>
             </a>
@@ -39,7 +39,7 @@
                 <i class="fa-solid fa-calendar-check"></i>
                 <span>Booked Sessions</span>
             </a>
-            <a href="learning-progress.html" class="dashboard-menu-link active">
+            <a href="learning-progress.html" class="dashboard-menu-link">
                 <i class="fa-solid fa-chart-line"></i>
                 <span>Learning Progress</span>
             </a>
@@ -50,6 +50,10 @@
             <a href="messages.html" class="dashboard-menu-link">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Messages</span>
+            </a>
+            <a href="settings.html" class="dashboard-menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
             </a>
         </nav>
 
@@ -81,31 +85,88 @@
                             <strong>Priya Sharma</strong>
                             <small>Parent</small>
                         </span>
-                        <i class="fa-solid fa-chevron-down"></i>
                     </button>
-
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user"></i> Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
-                        <li>
-                            <button class="dropdown-item" type="button" data-logout-trigger>
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
-                            </button>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </header>
 
         <main class="dashboard-main">
 
-            <section class="dash-page-intro"><div><span>Learning Progress</span><h2>Understand how your children are improving</h2><p>Track overall growth, subject-level performance, and achievement milestones from tutor-led learning.</p></div><button class="dash-soft-btn" type="button"><i class="fa-solid fa-download"></i> Export Report</button></section>
+            <section class="dash-page-intro">
+                <div><span>Learning Progress</span>
+                    <h2>Understand how your children are improving</h2>
+                    <p>Track overall growth, subject-level performance, and achievement milestones from tutor-led
+                        learning.</p>
+                </div><button class="dash-soft-btn" type="button"><i class="fa-solid fa-download"></i> Export
+                    Report</button>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Overall Learning Progress</span><h3>Monthly growth dashboard</h3><p>Large progress widgets summarize attendance consistency, assignment completion, and improvement trend.</p></div></div><div class="dash-kpi-grid three"><article class="dash-ring-card"><div class="dash-ring" style="--value:86%">86%</div><h4>Overall Progress</h4><p>Across all active subjects</p></article><article class="dash-ring-card"><div class="dash-ring" style="--value:94%">94%</div><h4>Attendance</h4><p>Classes attended this month</p></article><article class="dash-ring-card"><div class="dash-ring" style="--value:88%">88%</div><h4>Assignments</h4><p>Practice tasks completed</p></article></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Overall Learning Progress</span>
+                        <h3>Monthly growth dashboard</h3>
+                        <p>Large progress widgets summarize attendance consistency, assignment completion, and
+                            improvement trend.</p>
+                    </div>
+                </div>
+                <div class="dash-kpi-grid three">
+                    <article class="dash-ring-card">
+                        <div class="dash-ring" style="--value:86%">86%</div>
+                        <h4>Overall Progress</h4>
+                        <p>Across all active subjects</p>
+                    </article>
+                    <article class="dash-ring-card">
+                        <div class="dash-ring" style="--value:94%">94%</div>
+                        <h4>Attendance</h4>
+                        <p>Classes attended this month</p>
+                    </article>
+                    <article class="dash-ring-card">
+                        <div class="dash-ring" style="--value:88%">88%</div>
+                        <h4>Assignments</h4>
+                        <p>Practice tasks completed</p>
+                    </article>
+                </div>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Subject-wise Performance</span><h3>Strengths and support areas</h3><p>Progress bars help parents compare subjects and decide where extra tutor time is needed.</p></div></div><div class="dash-card"><div class="dash-progress-list"><div><label>Mathematics <b>92%</b></label><span><i style="width:92%"></i></span></div><div><label>Computers <b>88%</b></label><span><i style="width:88%"></i></span></div><div><label>Science <b>84%</b></label><span><i style="width:84%"></i></span></div><div><label>English <b>78%</b></label><span><i style="width:78%"></i></span></div></div></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Subject-wise Performance</span>
+                        <h3>Strengths and support areas</h3>
+                        <p>Progress bars help parents compare subjects and decide where extra tutor time is needed.</p>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <div class="dash-progress-list">
+                        <div><label>Mathematics <b>92%</b></label><span><i style="width:92%"></i></span></div>
+                        <div><label>Computers <b>88%</b></label><span><i style="width:88%"></i></span></div>
+                        <div><label>Science <b>84%</b></label><span><i style="width:84%"></i></span></div>
+                        <div><label>English <b>78%</b></label><span><i style="width:78%"></i></span></div>
+                    </div>
+                </div>
+            </section>
 
-            <section class="dash-section"><div class="dash-section-heading"><div><span>Achievement & Milestones</span><h3>Learning wins worth celebrating</h3><p>Milestone badges keep students motivated and help parents recognize consistent effort.</p></div></div><div class="dash-achievement-grid"><article><i class="fa-solid fa-trophy"></i><h4>Algebra Champion</h4><p>Scored above 90% in three consecutive algebra tasks.</p></article><article><i class="fa-solid fa-fire"></i><h4>7-Day Practice Streak</h4><p>Completed daily revision activities for one full week.</p></article><article><i class="fa-solid fa-medal"></i><h4>Science Improver</h4><p>Improved physics worksheet score by 14% this month.</p></article></div></section>
+            <section class="dash-section">
+                <div class="dash-section-heading">
+                    <div><span>Achievement & Milestones</span>
+                        <h3>Learning wins worth celebrating</h3>
+                        <p>Milestone badges keep students motivated and help parents recognize consistent effort.</p>
+                    </div>
+                </div>
+                <div class="dash-achievement-grid">
+                    <article><i class="fa-solid fa-trophy"></i>
+                        <h4>Algebra Champion</h4>
+                        <p>Scored above 90% in three consecutive algebra tasks.</p>
+                    </article>
+                    <article><i class="fa-solid fa-fire"></i>
+                        <h4>7-Day Practice Streak</h4>
+                        <p>Completed daily revision activities for one full week.</p>
+                    </article>
+                    <article><i class="fa-solid fa-medal"></i>
+                        <h4>Science Improver</h4>
+                        <p>Improved physics worksheet score by 14% this month.</p>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <div class="logout-modal" id="logoutModal" aria-hidden="true">
@@ -122,9 +183,9 @@
         </div>
     </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
 
 </body>
 
