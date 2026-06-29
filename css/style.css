@@ -4181,6 +4181,99 @@ body.dark-mode .impact-ring::before {
 
 /********************************************About Page***************************************************/
 
+.page-banner,
+.contact-page-banner,
+.pricing-page-banner {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ===== ABOUT PAGE HERO ===== */
+
+.page-banner-content h1 {
+    color: #ffffff !important;
+}
+
+.page-banner-content p {
+    color: rgba(255, 255, 255, .9) !important;
+}
+
+.page-banner-content .page-badge {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, .15);
+}
+
+.breadcrumb-wrapper a {
+    color: #ffffff !important;
+}
+
+.breadcrumb-wrapper span {
+    color: rgba(255, 255, 255, .8);
+}
+
+.breadcrumb-wrapper .active-page {
+    color: #4F8DFF !important;
+}
+
+
+/* ===== PRICING PAGE HERO ===== */
+
+.pricing-page-banner-content h1 {
+    color: #ffffff !important;
+}
+
+.pricing-page-banner-content p {
+    color: rgba(255, 255, 255, .9) !important;
+}
+
+.pricing-page-badge {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, .15);
+}
+
+.pricing-breadcrumb-wrapper a {
+    color: #ffffff !important;
+}
+
+.pricing-breadcrumb-wrapper span {
+    color: rgba(255, 255, 255, .8);
+}
+
+.pricing-breadcrumb-wrapper .active-page {
+    color: #4F8DFF !important;
+}
+
+
+/* ===== CONTACT PAGE HERO ===== */
+
+.contact-page-banner-content h1 {
+    color: #ffffff !important;
+}
+
+.contact-page-banner-content p {
+    color: rgba(255, 255, 255, .9) !important;
+}
+
+.contact-page-badge {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, .15);
+}
+
+.contact-breadcrumb-wrapper a {
+    color: #ffffff !important;
+}
+
+.contact-breadcrumb-wrapper span {
+    color: rgba(255, 255, 255, .8);
+}
+
+.contact-breadcrumb-wrapper .active-page {
+    color: #4F8DFF !important;
+}
+
 /* ==========================
    Our Story
 ========================== */
@@ -8912,34 +9005,11 @@ body.dark-mode .subject-topic-list span {
 
 .page-banner {
     padding: 130px 0 100px;
-    background: linear-gradient(135deg,
-            rgba(37, 99, 235, .08),
-            rgba(16, 185, 129, .08));
-    position: relative;
-    overflow: hidden;
+    background:
+        linear-gradient(rgba(15, 23, 42, .72), rgba(15, 23, 42, .72)),
+        url("../images/tutors-banner.jpg") center center / cover no-repeat;
 }
 
-.page-banner::before {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: rgba(37, 99, 235, .08);
-    border-radius: 50%;
-    top: -150px;
-    right: -120px;
-}
-
-.page-banner::after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(16, 185, 129, .08);
-    border-radius: 50%;
-    bottom: -120px;
-    left: -100px;
-}
 
 .page-banner-content {
     text-align: center;
@@ -9638,9 +9708,9 @@ html[dir="rtl"] .about-bento-card:not(.bento-large)::before {
 .pricing-page-banner,
 .contact-page-banner {
     padding: 130px 0 100px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, .08), rgba(16, 185, 129, .08));
-    position: relative;
-    overflow: hidden;
+    background:
+        linear-gradient(rgba(15, 23, 42, .72), rgba(15, 23, 42, .72)),
+        url("../images/tutors-banner.jpg") center center / cover no-repeat;
 }
 
 .pricing-page-banner-content,
@@ -13466,103 +13536,17 @@ body.dark-mode .leaderboard-meta span {
 
 }
 
-.page-banner,
-.contact-page-banner,
-.pricing-page-banner {
-    background:
-        linear-gradient(rgba(15, 23, 42, .72), rgba(15, 23, 42, .72)),
-        url("../images/tutors-banner.jpg") center center / cover no-repeat;
+.subject-card-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 18px;
 }
 
-.page-banner,
-.contact-page-banner,
-.pricing-page-banner {
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-/* ===== ABOUT PAGE HERO ===== */
-
-.page-banner-content h1 {
-    color: #ffffff !important;
-}
-
-.page-banner-content p {
-    color: rgba(255, 255, 255, .9) !important;
-}
-
-.page-banner-content .page-badge {
-    color: #ffffff !important;
-    background: rgba(255, 255, 255, .15);
-}
-
-.breadcrumb-wrapper a {
-    color: #ffffff !important;
-}
-
-.breadcrumb-wrapper span {
-    color: rgba(255, 255, 255, .8);
-}
-
-.breadcrumb-wrapper .active-page {
-    color: #4F8DFF !important;
-}
-
-
-/* ===== PRICING PAGE HERO ===== */
-
-.pricing-page-banner-content h1 {
-    color: #ffffff !important;
-}
-
-.pricing-page-banner-content p {
-    color: rgba(255, 255, 255, .9) !important;
-}
-
-.pricing-page-badge {
-    color: #ffffff !important;
-    background: rgba(255, 255, 255, .15);
-}
-
-.pricing-breadcrumb-wrapper a {
-    color: #ffffff !important;
-}
-
-.pricing-breadcrumb-wrapper span {
-    color: rgba(255, 255, 255, .8);
-}
-
-.pricing-breadcrumb-wrapper .active-page {
-    color: #4F8DFF !important;
-}
-
-
-/* ===== CONTACT PAGE HERO ===== */
-
-.contact-page-banner-content h1 {
-    color: #ffffff !important;
-}
-
-.contact-page-banner-content p {
-    color: rgba(255, 255, 255, .9) !important;
-}
-
-.contact-page-badge {
-    color: #ffffff !important;
-    background: rgba(255, 255, 255, .15);
-}
-
-.contact-breadcrumb-wrapper a {
-    color: #ffffff !important;
-}
-
-.contact-breadcrumb-wrapper span {
-    color: rgba(255, 255, 255, .8);
-}
-
-.contact-breadcrumb-wrapper .active-page {
-    color: #4F8DFF !important;
+.subject-card-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block;
 }
