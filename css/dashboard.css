@@ -60,6 +60,23 @@ body.dashboard-page {
 
 }
 
+.notification-badge {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ef4444;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
 .dashboard-page a {
     text-decoration: none;
 }
@@ -95,7 +112,8 @@ body.dashboard-page {
 
 .dashboard-menu {
     display: grid;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 20px;
     flex: 1 1 auto;
     align-content: start;
     min-height: 0;
@@ -1645,6 +1663,24 @@ body.dashboard-page {
     grid-column: 1 / -1;
 }
 
+.settings-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+}
+
+.settings-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 body.dark-mode.dashboard-page.settings-page .settings-avatar-panel,
 body.dark-mode.dashboard-page.settings-page .settings-toggle-row {
     background: rgba(15, 23, 42, .5);
@@ -2969,7 +3005,7 @@ html[dir="rtl"] .settings-profile-section .settings-actions .dashboard-primary-a
 }
 
 /* Current responsive QA fixes */
-.dash-card h4 + .dash-timeline {
+.dash-card h4+.dash-timeline {
     margin-top: 18px;
 }
 
@@ -3013,6 +3049,7 @@ body.dashboard-page:has(.logout-modal.show) .dashboard-sidebar-overlay {
 }
 
 @media (max-width: 767px) {
+
     .messages-page .dash-table th,
     .messages-page .dash-table td {
         padding: 13px 10px;
@@ -3029,4 +3066,37 @@ body.dashboard-page:has(.logout-modal.show) .dashboard-sidebar-overlay {
     .messages-page .dash-table td:nth-child(2) {
         width: 130px;
     }
+}
+
+/* iPad Mini / Tablet */
+@media (min-width:768px) and (max-width:991px) {
+
+    /* My Tutors */
+    .dash-kpi-grid.three {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .dash-kpi-grid.three .dash-kpi-card:last-child {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        width: calc(50% - 12px);
+        max-width: 360px;
+    }
+
+    /* Booked Sessions */
+    .dash-session-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .dash-session-grid article:last-child {
+        grid-column: 1 / span 2;
+        justify-self: center;
+        width: calc(50% - 12px);
+        max-width: 360px;
+    }
+
 }
