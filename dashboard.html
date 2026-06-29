@@ -47,14 +47,6 @@
                 <i class="fa-solid fa-wallet"></i>
                 <span>Payments</span>
             </a>
-            <a href="messages.html" class="dashboard-menu-link">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Messages</span>
-            </a>
-            <a href="settings.html" class="dashboard-menu-link">
-                <i class="fa-solid fa-gear"></i>
-                <span>Settings</span>
-            </a>
         </nav>
 
         <button class="dashboard-logout" type="button" data-logout-trigger>
@@ -76,6 +68,15 @@
                 </button>
                 <button class="topbar-icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
                     <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="topbar-icon-btn position-relative" title="Notifications"
+                    onclick="window.location.href='messages.html'">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <button class="topbar-icon-btn" title="Settings" onclick="window.location.href='settings.html'">
+                    <i class=" fa-solid fa-gear"></i>
                 </button>
 
                 <div class="dropdown profile-dropdown">
