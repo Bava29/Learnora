@@ -2029,22 +2029,22 @@ header {
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    padding: 9px 18px;
+    padding: 10px 18px;
     border-radius: 50px;
     background: rgba(37, 99, 235, 0.09);
     color: var(--primary-color);
     font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
 .hero-section h1 {
-    max-width: 660px;
-    color: #111827;
+    max-width: 650px;
+    color: #0F172A;
     font-size: clamp(2.75rem, 5vw, 5rem);
-    font-weight: 800;
-    line-height: 1.04;
-    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 1.08;
+    margin-bottom: 28px;
 }
 
 .hero-section p {
@@ -2052,7 +2052,7 @@ header {
     color: #64748B;
     font-size: 1.08rem;
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .hero-actions {
@@ -8021,7 +8021,7 @@ body.dark-mode .subject-topic-list span {
 }
 
 .requirement-card h4 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 
     margin-bottom: 12px;
@@ -8236,239 +8236,1018 @@ body.dark-mode .subject-topic-list span {
 
 /**************************************************Pricing Page*******************************************************/
 
-.pricing-plans-section {
-    background:
-        radial-gradient(circle at 50% 18%, rgba(37, 99, 235, .055), transparent 24%),
-        #fbfcfd;
-}
+/*=========================================
+      LRX PRICING SECTION
+=========================================*/
 
-.pricing-plans-section .row {
-    max-width: 1120px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.pricing-period-heading {
-    display: flex;
-    max-width: 1120px;
-    margin: 58px auto 25px;
-    align-items: center;
-    gap: 16px;
-}
-
-.pricing-period-heading::before,
-.pricing-period-heading::after {
-    content: "";
-    height: 1px;
-    flex: 1;
-    background: linear-gradient(90deg, transparent, rgba(37, 99, 235, .24));
-}
-
-.pricing-period-heading::after {
-    background: linear-gradient(90deg, rgba(37, 99, 235, .24), transparent);
-}
-
-.pricing-period-heading span {
-    padding: 9px 18px;
-    border: 1px solid rgba(37, 99, 235, .14);
-    border-radius: 100px;
-    background: #eff6ff;
-    color: var(--primary-color);
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.monthly-period-heading {
-    margin-top: 0;
-}
-
-.yearly-plan-row {
-    padding-bottom: 8px;
-}
-
-.pricing-plan-card {
+.lrx-price-section {
     position: relative;
-    display: flex;
-    height: 100%;
-    padding: 24px 22px 30px;
+    padding: 120px 0;
+    background: #f8fbff;
     overflow: hidden;
-    flex-direction: column;
-    border: 1px solid rgba(226, 232, 240, .8);
-    border-radius: 26px;
-    background: #fff;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, .09);
-    transition: transform .35s ease, box-shadow .35s ease;
-    isolation: isolate;
 }
 
-.pricing-plan-card::before {
+.lrx-price-section::before {
     content: "";
     position: absolute;
-    height: 150px;
-    top: 9px;
-    right: 9px;
-    left: 9px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #f3f7ff, #eaf1ff);
-    z-index: -1;
-}
-
-.pricing-plan-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 28px 55px rgba(15, 23, 42, .14);
-}
-
-.pricing-plan-card h3 {
-    order: 1;
-    align-self: flex-start;
-    margin: 0;
-    padding: 6px 13px;
-    border: 1px solid rgba(255, 255, 255, .8);
-    border-radius: 100px;
-    background: rgba(255, 255, 255, .82);
-    color: #172033;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 1;
-    backdrop-filter: blur(8px);
-}
-
-.plan-text {
-    order: 3;
-    min-height: 48px;
-    margin: 42px 0 11px;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.plan-price {
-    order: 2;
-    margin: 29px 0 0;
-    color: #172033;
-    font-size: 42px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -.04em;
-}
-
-.plan-price span {
-    margin-left: 2px;
-    color: #64748b;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0;
-}
-
-.pricing-plan-card ul {
-    order: 5;
-    list-style: none;
-    padding: 0;
-    margin: 29px 0 0;
-}
-
-.pricing-plan-card ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 13px;
-    color: #607089;
-    font-size: 14px;
-}
-
-.pricing-plan-card ul li i {
-    display: grid;
-    width: 18px;
-    height: 18px;
-    margin-right: 9px;
-    flex: 0 0 auto;
-    place-items: center;
-    border: 1.5px solid var(--secondary-color);
+    width: 550px;
+    height: 550px;
+    background: #4f46e510;
     border-radius: 50%;
-    color: var(--secondary-color);
-    font-size: 9px;
+    top: -220px;
+    left: -180px;
+    filter: blur(80px);
 }
 
-.pricing-plan-card .primary-btn {
-    order: 4;
-    width: 100%;
-    padding: 13px 20px;
-    border-radius: 100px;
-    background: #172033;
-    box-shadow: none;
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.pricing-plan-card .primary-btn:hover {
-    background: var(--primary-color);
-    transform: none;
-}
-
-.pricing-plans-section .featured-plan {
-    border: 1px solid rgba(37, 99, 235, .24);
-    transform: none;
-}
-
-.pricing-plans-section .featured-plan::before {
-    background: linear-gradient(135deg, #60a5fa, var(--primary-color));
-}
-
-.pricing-plans-section .featured-plan .plan-price,
-.pricing-plans-section .featured-plan .plan-price span {
-    color: #fff;
-}
-
-.pricing-plans-section .featured-badge {
+.lrx-price-section::after {
+    content: "";
     position: absolute;
-    top: 25px;
-    right: 22px;
-    padding: 6px 10px;
-    border: 1px solid rgba(255, 255, 255, .38);
-    border-radius: 100px;
-    background: rgba(255, 255, 255, .18);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 1;
-    backdrop-filter: blur(7px);
-    z-index: 2;
+    width: 450px;
+    height: 450px;
+    background: #06b6d410;
+    border-radius: 50%;
+    right: -150px;
+    bottom: -180px;
+    filter: blur(80px);
 }
 
-@media(max-width:991px) {
+/*========================
+HEADER
+=========================*/
 
-    .pricing-plan-card {
-        max-width: 560px;
+.lrx-price-header {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.lrx-price-label {
+
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    border-radius: 50px;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+.lrx-price-header h2 {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+.lrx-price-header p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #6b7280;
+
+}
+
+/*=========================
+TOGGLE
+==========================*/
+
+.lrx-toggle-wrapper {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 70px;
+
+}
+
+.lrx-toggle-box {
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 8px;
+
+    border-radius: 100px;
+
+    background: #ffffff;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+
+}
+
+.lrx-toggle-btn {
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    background: transparent;
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    color: #374151;
+
+    transition: .35s;
+
+    position: relative;
+
+}
+
+.lrx-toggle-btn.active {
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+}
+
+.lrx-save-badge {
+
+    position: absolute;
+
+    top: -12px;
+
+    right: -20px;
+
+    background: #16a34a;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    padding: 4px 10px;
+
+    border-radius: 50px;
+
+}
+
+/*=========================
+PLAN AREA
+==========================*/
+
+.lrx-plan-area {
+
+    display: none;
+
+    animation: lrxFade .5s ease;
+
+}
+
+.lrx-plan-area.active {
+
+    display: block;
+
+}
+
+@keyframes lrxFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/*=========================
+CARDS
+==========================*/
+
+.lrx-card {
+
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    padding: 45px;
+
+    overflow: hidden;
+
+    transition: .4s;
+
+    height: 100%;
+
+    box-shadow: 0 18px 55px rgba(0, 0, 0, .08);
+
+}
+
+.lrx-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .15);
+
+}
+
+/*=========================
+ICONS
+==========================*/
+
+.lrx-card-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    font-size: 32px;
+
+}
+
+.lrx-basic-card .lrx-card-icon {
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+}
+
+.lrx-standard-card .lrx-card-icon {
+
+    background: #fff7ed;
+
+    color: #f97316;
+
+}
+
+.lrx-premium-card .lrx-card-icon {
+
+    background: #fef9c3;
+
+    color: #ca8a04;
+
+}
+
+/*=========================================
+        PLAN TITLE
+=========================================*/
+
+.lrx-card h3 {
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    margin-bottom: 12px;
+
+}
+
+.lrx-card-subtitle {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #6b7280;
+
+    margin-bottom: 35px;
+
+}
+
+/*=========================================
+            PRICE
+=========================================*/
+
+.lrx-card-price {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    font-size: 56px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    margin-bottom: 18px;
+
+    line-height: 1;
+
+}
+
+.lrx-card-price span {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+
+    margin-bottom: 8px;
+
+}
+
+.lrx-year-save {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+}
+
+/*=========================================
+          FEATURE LIST
+=========================================*/
+
+.lrx-feature-list {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+}
+
+.lrx-feature-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eef2f7;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+}
+
+.lrx-feature-list li:last-child {
+
+    border-bottom: none;
+
+}
+
+.lrx-feature-list i {
+
+    width: 28px;
+
+    height: 28px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 13px;
+
+    color: #ffffff;
+
+}
+
+/*=========================================
+         BUTTON
+=========================================*/
+
+.lrx-card-btn {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    margin-top: 35px;
+
+    height: 58px;
+
+    border-radius: 18px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: .35s;
+
+}
+
+/*=========================================
+         BASIC PLAN
+=========================================*/
+
+.lrx-basic-card {
+
+    border: 2px solid #e5e7eb;
+
+}
+
+.lrx-basic-card .lrx-feature-list i {
+
+    background: #4f46e5;
+
+}
+
+.lrx-basic-card .lrx-card-btn {
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+}
+
+.lrx-basic-card .lrx-card-btn:hover {
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+}
+
+/*=========================================
+        STANDARD PLAN
+=========================================*/
+
+.lrx-standard-card {
+
+    border: 2px solid #4f46e5;
+
+    transform: scale(1.05);
+
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+
+}
+
+.lrx-standard-card:hover {
+
+    transform: translateY(-12px) scale(1.05);
+
+}
+
+.lrx-standard-card .lrx-feature-list i {
+
+    background: #4f46e5;
+
+}
+
+.lrx-standard-card .lrx-card-btn {
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+}
+
+.lrx-standard-card .lrx-card-btn:hover {
+
+    background: #312e81;
+
+}
+
+/*=========================================
+        PREMIUM PLAN
+=========================================*/
+
+.lrx-premium-card {
+
+    background: linear-gradient(135deg, #111827, #1f2937);
+
+    color: #ffffff;
+
+    border: none;
+
+}
+
+.lrx-premium-card h3 {
+
+    color: #ffffff;
+
+}
+
+.lrx-premium-card .lrx-card-subtitle {
+
+    color: #d1d5db;
+
+}
+
+.lrx-premium-card .lrx-card-price {
+
+    color: #ffffff;
+
+}
+
+.lrx-premium-card .lrx-card-price span {
+
+    color: #d1d5db;
+
+}
+
+.lrx-premium-card .lrx-feature-list li {
+
+    color: #f3f4f6;
+
+    border-color: rgba(255, 255, 255, .08);
+
+}
+
+.lrx-premium-card .lrx-feature-list i {
+
+    background: #f59e0b;
+
+}
+
+.lrx-premium-card .lrx-card-btn {
+
+    background: #f59e0b;
+
+    color: #111827;
+
+}
+
+.lrx-premium-card .lrx-card-btn:hover {
+
+    background: #ffffff;
+
+}
+
+/*=========================================
+      MOST POPULAR BADGE
+=========================================*/
+
+.lrx-popular-tag {
+
+    position: absolute;
+
+    top: 22px;
+
+    right: -45px;
+
+    width: 170px;
+
+    text-align: center;
+
+    background: #4f46e5;
+
+    color: #ffffff;
+
+    padding: 10px 0;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transform: rotate(45deg);
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+    box-shadow: 0 8px 20px rgba(79, 70, 229, .35);
+
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media (max-width:1199px) {
+
+    .lrx-standard-card {
+
+        transform: none;
+
+    }
+
+    .lrx-standard-card:hover {
+
+        transform: translateY(-10px);
+
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .lrx-price-section {
+
+        padding: 90px 0;
+
+    }
+
+    .lrx-price-header h2 {
+
+        font-size: 40px;
+
+    }
+
+    .lrx-card {
+
+        padding: 35px;
+
+    }
+
+    .lrx-card-price {
+
+        font-size: 48px;
+
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .lrx-price-header {
+
+        margin-bottom: 50px;
+
+    }
+
+    .lrx-price-header h2 {
+
+        font-size: 32px;
+
+    }
+
+    .lrx-price-header p {
+
+        font-size: 16px;
+
+    }
+
+    .lrx-toggle-box {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+        padding: 15px;
+
+    }
+
+    .lrx-toggle-btn {
+
+        width: 100%;
+
+    }
+
+    .lrx-card {
+
+        padding: 30px;
+
+    }
+
+    .lrx-card-price {
+
+        font-size: 42px;
+
+    }
+
+}
+
+@media (max-width:575px) {
+
+    .lrx-price-section {
+
+        padding: 70px 0;
+
+    }
+
+    .lrx-card {
+
+        padding: 25px;
+
+        border-radius: 22px;
+
+    }
+
+    .lrx-card-icon {
+
+        width: 70px;
+
+        height: 70px;
+
+        font-size: 28px;
+
+    }
+
+    .lrx-card h3 {
+
+        font-size: 28px;
+
+    }
+
+    .lrx-card-price {
+
+        font-size: 38px;
+
+    }
+
+}
+
+/* =========================================
+   iPad Pro / iPad Air Landscape
+========================================= */
+
+@media only screen and (min-width: 992px) and (max-width: 1366px) {
+
+    .lrx-price-section {
+        padding: 90px 0;
+    }
+
+    .lrx-price-header {
+        margin-bottom: 55px;
+    }
+
+    .lrx-price-header h2 {
+        font-size: 40px;
+    }
+
+    .lrx-price-header p {
+        font-size: 17px;
+        max-width: 650px;
         margin: 0 auto;
     }
 
-}
+    .lrx-toggle-wrapper {
+        margin-bottom: 55px;
+    }
 
-@media(max-width:575px) {
+    .lrx-card {
+        padding: 30px;
+        border-radius: 24px;
+    }
 
-    .pricing-period-heading {
-        margin-top: 42px;
+    .lrx-card-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 26px;
         margin-bottom: 20px;
     }
 
-    .pricing-plan-card {
-        padding: 22px 18px 26px;
-        border-radius: 22px;
+    .lrx-card h3 {
+        font-size: 28px;
     }
 
-    .pricing-plan-card::before {
-        height: 144px;
+    .lrx-card-subtitle {
+        font-size: 15px;
+        margin-bottom: 22px;
     }
 
-    .plan-price {
-        font-size: 38px;
+    .lrx-card-price {
+        font-size: 42px;
+        margin-bottom: 14px;
     }
 
-    .pricing-plans-section .featured-badge {
-        right: 18px;
+    .lrx-card-price span {
+        font-size: 16px;
     }
+
+    .lrx-feature-list li {
+        font-size: 15px;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .lrx-feature-list i {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+    }
+
+    .lrx-card-btn {
+        height: 52px;
+        font-size: 15px;
+        margin-top: 24px;
+    }
+
+    /* Standard card konjam mattum highlight */
+    .lrx-standard-card {
+        transform: scale(1.02);
+    }
+
+    .lrx-standard-card:hover {
+        transform: translateY(-8px) scale(1.02);
+    }
+
+    .lrx-popular-tag {
+        width: 150px;
+        right: -42px;
+        font-size: 11px;
+        padding: 8px 0;
+    }
+
+}
+
+/*=========================================
+          DARK MODE
+=========================================*/
+
+body.dark-mode .lrx-price-section {
+
+    background: #0f172a;
+
+}
+
+body.dark-mode .lrx-price-header h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .lrx-price-header p {
+
+    color: #cbd5e1;
+
+}
+
+body.dark-mode .lrx-price-label {
+
+    background: #1e293b;
+
+    color: #60a5fa;
+
+}
+
+body.dark-mode .lrx-toggle-box {
+
+    background: #1e293b;
+
+}
+
+body.dark-mode .lrx-toggle-btn {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .lrx-basic-card {
+
+    background: #1e293b;
+
+    border-color: #334155;
+
+}
+
+body.dark-mode .lrx-standard-card {
+
+    background: #1e293b;
+
+    border-color: #6366f1;
+
+}
+
+body.dark-mode .lrx-basic-card h3,
+body.dark-mode .lrx-standard-card h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .lrx-basic-card .lrx-card-price,
+body.dark-mode .lrx-standard-card .lrx-card-price {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .lrx-basic-card .lrx-card-subtitle,
+body.dark-mode .lrx-standard-card .lrx-card-subtitle {
+
+    color: #cbd5e1;
+
+}
+
+body.dark-mode .lrx-feature-list li {
+
+    color: #e2e8f0;
+
+    border-color: #334155;
+
+}
+
+/*=========================================
+              RTL
+=========================================*/
+
+body.rtl .lrx-feature-list li {
+
+    flex-direction: row-reverse;
+
+    text-align: right;
+
+}
+
+body.rtl .lrx-card {
+
+    text-align: right;
+
+}
+
+body.rtl .lrx-card-price {
+
+    justify-content: flex-end;
+
+}
+
+body.rtl .lrx-toggle-box {
+
+    direction: rtl;
+
+}
+
+body.rtl .lrx-popular-tag {
+
+    left: -45px;
+
+    right: auto;
+
+    transform: rotate(-45deg);
+
 }
 
 /* ==========================
@@ -13549,4 +14328,167 @@ body.dark-mode .leaderboard-meta span {
     object-fit: cover !important;
     object-position: center !important;
     display: block;
+}
+
+/* ======================================
+   STRONG DESKTOP NAVBAR CENTER OVERRIDE
+====================================== */
+
+@media (min-width:992px) {
+
+    .navbar-collapse {
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex: 1 1 auto !important;
+
+    }
+
+    .navbar-nav {
+
+        display: inline-flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 20px !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        float: none !important;
+        width: auto !important;
+        max-width: max-content !important;
+
+    }
+
+    .navbar-nav>li {
+
+        display: flex !important;
+        align-items: center !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    .navbar-nav>li>a {
+
+        padding: 10px 6px !important;
+
+    }
+
+}
+
+/* ==========================================
+   HOME 2 - POPULAR SUBJECTS ALIGNMENT FIX
+========================================== */
+
+.popular-subjects .row {
+
+    align-items: stretch;
+
+}
+
+.popular-subjects .subject-card {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    height: 100%;
+
+    min-height: 250px;
+
+    padding: 28px;
+
+}
+
+.popular-subjects .subject-icon {
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+}
+
+.popular-subjects .subject-card h4 {
+
+    margin-bottom: 12px;
+
+    min-height: 32px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.popular-subjects .subject-card p {
+
+    flex: 1;
+
+    margin-bottom: 20px;
+
+    line-height: 1.7;
+
+}
+
+.popular-subjects .subject-card span {
+
+    margin-top: auto;
+
+    display: inline-block;
+
+    font-weight: 700;
+
+}
+
+/* ==========================================
+   HOME 2 PRICING CTA REVIEW FIX
+========================================== */
+
+/* Basic & Premium - Secondary Button */
+
+.home2-plan-card:not(.home2-plan-card--featured) .home2-plan-btn {
+
+    background: transparent !important;
+    color: var(--primary-color) !important;
+
+    border: 2px solid var(--primary-color) !important;
+
+    box-shadow: none !important;
+
+}
+
+.home2-plan-card:not(.home2-plan-card--featured) .home2-plan-btn:hover {
+
+    background: var(--primary-color) !important;
+    color: #fff !important;
+
+    border-color: var(--primary-color) !important;
+
+}
+
+/* Standard - Primary Button */
+
+.home2-plan-card--featured .home2-plan-btn {
+
+    background: var(--primary-color) !important;
+    color: #fff !important;
+
+    border: 2px solid var(--primary-color) !important;
+
+}
+
+.home2-plan-card--featured .home2-plan-btn:hover {
+
+    background: #1D4ED8 !important;
+    border-color: #1D4ED8 !important;
+
 }
