@@ -385,3 +385,40 @@ const initCounters = () => {
 };
 
 initCounters();
+
+const lrxButtons = document.querySelectorAll(".lrx-toggle-btn");
+const lrxPlans = document.querySelectorAll(".lrx-plan-area");
+
+function showPlan(plan) {
+
+    lrxButtons.forEach(btn => {
+        btn.classList.remove("active");
+
+        if (btn.dataset.plan === plan) {
+            btn.classList.add("active");
+        }
+    });
+
+    lrxPlans.forEach(item => item.classList.remove("active"));
+
+    document.getElementById(
+        plan === "monthly" ? "lrxMonthly" : "lrxYearly"
+    ).classList.add("active");
+
+    localStorage.setItem("lrxSelectedPlan", plan);
+
+}
+
+lrxButtons.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        showPlan(btn.dataset.plan);
+
+    });
+
+});
+
+const savedPlan = localStorage.getItem("lrxSelectedPlan") || "monthly";
+
+showPlan(savedPlan);
