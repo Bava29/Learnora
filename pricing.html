@@ -148,356 +148,424 @@
     </section>
     <!-- Page Banner End -->
 
-    <!-- Pricing Plans Start -->
-    <section class="pricing-plans-section">
+    <!-- =========================
+     Pricing Plans Start
+========================= -->
+
+    <!-- ==========================================
+     LRX PRICING SECTION START
+=========================================== -->
+
+    <section class="lrx-price-section">
+
         <div class="container">
 
-            <div class="section-header text-center">
+            <!-- Heading -->
 
-                <span class="section-subtitle">
-                    Our Plans
+            <div class="lrx-price-header text-center">
+
+                <span class="lrx-price-label">
+                    Pricing Plans
                 </span>
 
-                <h2 class="section-title">
-                    Choose Your Learning Plan
+                <h2>
+                    Flexible Learning Plans
+                    <br>
+                    For Every Student
                 </h2>
 
-                <p class="section-description">
-                    Flexible and affordable plans designed to support
-                    every student's learning journey.
+                <p>
+                    Choose the learning plan that best fits your educational goals.
+                    Switch between monthly and yearly billing to save more.
                 </p>
 
             </div>
 
-            <div class="pricing-period-heading monthly-period-heading">
-                <span>Monthly Plans</span>
-            </div>
+            <!-- Toggle -->
 
-            <div class="row g-4 justify-content-center">
+            <div class="lrx-toggle-wrapper">
 
-                <!-- Basic Plan -->
+                <div class="lrx-toggle-box">
 
-                <div class="col-lg-4">
+                    <button class="lrx-toggle-btn active" data-plan="monthly">
 
-                    <div class="pricing-plan-card">
+                        Monthly
 
-                        <h3>Basic</h3>
+                    </button>
 
-                        <p class="plan-text">
-                            Perfect for students to getting started.
-                        </p>
+                    <button class="lrx-toggle-btn" data-plan="yearly">
 
-                        <div class="plan-price">
+                        Yearly
 
-                            ₹999
+                        <span class="lrx-save-badge">
+                            Save 20%
+                        </span>
 
-                            <span>/month</span>
-
-                        </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Access to Tutors
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Flexible Scheduling
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Subject Guidance
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Email Support
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Standard Plan -->
-
-                <div class="col-lg-4">
-
-                    <div class="pricing-plan-card pricing-featured-plan">
-
-                        <div class="featured-badge">
-                            Most Popular
-                        </div>
-
-                        <h3>Standard</h3>
-
-                        <p class="plan-text">
-                            Ideal for consistent academic growth.
-                        </p>
-
-                        <div class="plan-price">
-
-                            ₹1999
-
-                            <span>/month</span>
-
-                        </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Everything in Basic
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Progress Reports
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Tutor Feedback
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Priority Support
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Premium Plan -->
-
-                <div class="col-lg-4">
-
-                    <div class="pricing-plan-card">
-
-                        <h3>Premium</h3>
-
-                        <p class="plan-text">
-                            Advanced support for maximum success.
-                        </p>
-
-                        <div class="plan-price">
-
-                            ₹2999
-
-                            <span>/month</span>
-
-                        </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Everything in Standard
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Dedicated Mentor
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Personalized Learning Plan
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Advanced Analytics
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
-
-                    </div>
+                    </button>
 
                 </div>
 
             </div>
 
-            <div class="pricing-period-heading">
-                <span>Yearly Plans</span>
+
+            <!-- ===========================
+             MONTHLY PLANS
+        ============================ -->
+
+            <div class="lrx-plan-area active" id="lrxMonthly">
+
+                <div class="row g-4">
+
+                    <!-- BASIC -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="lrx-card lrx-basic-card">
+
+                            <div class="lrx-card-icon">
+
+                                <i class="fa-solid fa-seedling"></i>
+
+                            </div>
+
+                            <h3>Basic</h3>
+
+                            <p class="lrx-card-subtitle">
+                                Perfect for getting started.
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹999
+
+                                <span>/month</span>
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>1 Child Profile</li>
+
+                                <li><i class="fa-solid fa-check"></i>2 Tutor Sessions / Month</li>
+
+                                <li><i class="fa-solid fa-check"></i>Email Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Basic Progress Report</li>
+
+                                <li><i class="fa-solid fa-check"></i>Learning Resources</li>
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Choose Plan
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STANDARD -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="lrx-card lrx-standard-card">
+
+                            <div class="lrx-popular-tag">
+
+                                MOST POPULAR
+
+                            </div>
+
+                            <div class="lrx-card-icon">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                            </div>
+
+                            <h3>Standard</h3>
+
+                            <p class="lrx-card-subtitle">
+
+                                Best for growing learners.
+
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹1999
+
+                                <span>/month</span>
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>3 Child Profiles</li>
+
+                                <li><i class="fa-solid fa-check"></i>8 Tutor Sessions / Month</li>
+
+                                <li><i class="fa-solid fa-check"></i>Priority Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Weekly Progress Reports</li>
+
+                                <li><i class="fa-solid fa-check"></i>Parent Dashboard</li>
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Get Started
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PREMIUM -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="lrx-card lrx-premium-card">
+
+                            <div class="lrx-card-icon">
+
+                                <i class="fa-solid fa-crown"></i>
+
+                            </div>
+
+                            <h3>Premium</h3>
+
+                            <p class="lrx-card-subtitle">
+
+                                Complete learning experience.
+
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹3499
+
+                                <span>/month</span>
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>Unlimited Child Profiles</li>
+
+                                <li><i class="fa-solid fa-check"></i>Unlimited Tutor Sessions</li>
+
+                                <li><i class="fa-solid fa-check"></i>24×7 Premium Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Dedicated Mentor</li>
+
+                                <li><i class="fa-solid fa-check"></i>Personal Learning Roadmap</li>
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Upgrade Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="row g-4 justify-content-center yearly-plan-row">
+            <!-- Yearly Plans HTML continues in Part 2 -->
 
-                <!-- Yearly Basic Plan -->
+            <!-- ===========================
+     YEARLY PLANS
+=========================== -->
 
-                <div class="col-lg-4">
+            <div class="lrx-plan-area" id="lrxYearly">
 
-                    <div class="pricing-plan-card">
+                <div class="row g-4">
 
-                        <h3>Basic</h3>
+                    <!-- BASIC -->
 
-                        <p class="plan-text">
-                            Perfect for students to getting started.
-                        </p>
+                    <div class="col-lg-4 col-md-6">
 
-                        <div class="plan-price">
+                        <div class="lrx-card lrx-basic-card">
 
-                            ₹9,999
+                            <div class="lrx-card-icon">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
 
-                            <span>/year</span>
+                            <h3>Basic</h3>
+
+                            <p class="lrx-card-subtitle">
+                                Save more with yearly billing.
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹9,590
+
+                                <span>/year</span>
+
+                            </div>
+
+                            <div class="lrx-year-save">
+
+                                Save ₹2,398
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>1 Child Profile</li>
+
+                                <li><i class="fa-solid fa-check"></i>2 Tutor Sessions / Month</li>
+
+                                <li><i class="fa-solid fa-check"></i>Email Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Basic Progress Report</li>
+
+                                <li><i class="fa-solid fa-check"></i>Learning Resources</li>
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Choose Plan
+
+                            </a>
 
                         </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Access to Tutors
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Flexible Scheduling
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Subject Guidance
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Email Support
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
 
                     </div>
 
-                </div>
+                    <!-- STANDARD -->
 
-                <!-- Yearly Standard Plan -->
+                    <div class="col-lg-4 col-md-6">
 
-                <div class="col-lg-4">
+                        <div class="lrx-card lrx-standard-card">
 
-                    <div class="pricing-plan-card pricing-featured-plan">
+                            <div class="lrx-popular-tag">
 
-                        <div class="featured-badge">
-                            Most Popular
+                                MOST POPULAR
+
+                            </div>
+
+                            <div class="lrx-card-icon">
+
+                                <i class="fa-solid fa-graduation-cap"></i>
+
+                            </div>
+
+                            <h3>Standard</h3>
+
+                            <p class="lrx-card-subtitle">
+
+                                Perfect for long-term learning.
+
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹19,190
+
+                                <span>/year</span>
+
+                            </div>
+
+                            <div class="lrx-year-save">
+
+                                Save ₹4,798
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>3 Child Profiles</li>
+
+                                <li><i class="fa-solid fa-check"></i>8 Tutor Sessions / Month</li>
+
+                                <li><i class="fa-solid fa-check"></i>Priority Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Weekly Reports</li>
+
+                                <li><i class="fa-solid fa-check"></i>Parent Dashboard</li>
+
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Get Started
+
+                            </a>
+
                         </div>
-
-                        <h3>Standard</h3>
-
-                        <p class="plan-text">
-                            Ideal for consistent academic growth.
-                        </p>
-
-                        <div class="plan-price">
-
-                            ₹19,999
-
-                            <span>/year</span>
-
-                        </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Everything in Basic
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Progress Reports
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Tutor Feedback
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Priority Support
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
 
                     </div>
 
-                </div>
+                    <!-- PREMIUM -->
 
-                <!-- Yearly Premium Plan -->
+                    <div class="col-lg-4 col-md-6">
 
-                <div class="col-lg-4">
+                        <div class="lrx-card lrx-premium-card">
 
-                    <div class="pricing-plan-card">
+                            <div class="lrx-card-icon">
 
-                        <h3>Premium</h3>
+                                <i class="fa-solid fa-crown"></i>
 
-                        <p class="plan-text">
-                            Advanced support for maximum success.
-                        </p>
+                            </div>
 
-                        <div class="plan-price">
+                            <h3>Premium</h3>
 
-                            ₹29,999
+                            <p class="lrx-card-subtitle">
 
-                            <span>/year</span>
+                                Unlock every premium feature.
+
+                            </p>
+
+                            <div class="lrx-card-price">
+
+                                ₹33,590
+
+                                <span>/year</span>
+
+                            </div>
+
+                            <div class="lrx-year-save">
+
+                                Save ₹8,398
+
+                            </div>
+
+                            <ul class="lrx-feature-list">
+
+                                <li><i class="fa-solid fa-check"></i>Unlimited Child Profiles</li>
+
+                                <li><i class="fa-solid fa-check"></i>Unlimited Tutor Sessions</li>
+
+                                <li><i class="fa-solid fa-check"></i>24×7 Premium Support</li>
+
+                                <li><i class="fa-solid fa-check"></i>Dedicated Mentor</li>
+
+                                <li><i class="fa-solid fa-check"></i>Personal Learning Roadmap</li>
+
+                            </ul>
+
+                            <a href="#" class="lrx-card-btn">
+
+                                Upgrade Now
+
+                            </a>
 
                         </div>
-
-                        <ul>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Everything in Standard
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Dedicated Mentor
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Personalized Learning Plan
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                Advanced Analytics
-                            </li>
-
-                        </ul>
-
-                        <a href="#" class="primary-btn">
-                            Get Started
-                        </a>
 
                     </div>
 
@@ -506,8 +574,14 @@
             </div>
 
         </div>
+
     </section>
-    <!-- Pricing Plans End -->
+
+
+
+    <!-- ==========================================
+     LRX PRICING SECTION END
+=========================================== -->
 
     <!-- Plan Comparison Start -->
     <section class="comparison-section">
